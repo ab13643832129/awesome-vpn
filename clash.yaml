@@ -1,33 +1,32 @@
 proxies:
-- name: 美国/United States/freeinternet
-  type: vless
-  server: 135.84.72.18
+- name: 美国/San Francisco/United States/San Francisco/freeinternet
+  type: trojan
+  server: bestcf.030101.xyz
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
+    path: /?proxyip=ip.111000.de5.net:443
     headers:
       Host: sni.111000.dynv6.net
-- name: 美国/United States/freeinternet-2
+- name: 美国/United States/freeinternet
   type: vless
-  server: 184.174.80.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: www.hivenet.com
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
   tls: true
-  servername: sni.jpmj.dev
+  servername: qyi.fqjd663.ggff.net
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sni.jpmj.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet
+      Host: qyi.fqjd663.ggff.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-2
   type: vless
-  server: 162.159.38.62
+  server: 104.17.152.254
   port: 80
   uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
   network: ws
@@ -36,172 +35,102 @@ proxies:
     headers:
       Host: vip.yaml7.ggff.net
 - name: 英国/United Kingdom/freeinternet
+  type: vless
+  server: 185.156.19.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 加拿大/多伦多/Canada/Toronto/freeinternet
   type: ss
-  server: 185.5.38.111
-  port: 55988
-  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
-  cipher: chacha20-ietf-poly1305
-- name: 越南/Vietnam/freeinternet
-  type: ss
-  server: 103.186.154.236
-  port: 38388
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  cipher: aes-256-cfb
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-2
+  server: 137.184.174.93
+  port: 8080
+  password: 14fFPrbezE3HDZzsMOr6
+  cipher: rc4-md5
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-3
   type: trojan
-  server: 188.114.96.3
+  server: 172.64.147.24
   port: 443
   password: humanity
-  sni: www.creationlong.org
+  sni: www.gossipglove.com
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /assignment
     headers:
-      Host: www.creationlong.org
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet
+      Host: www.gossipglove.com
+- name: 瑞士/Switzerland/freeinternet
   type: trojan
-  server: 103.109.234.64
+  server: 185.18.250.245
   port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+- name: 法国/France/freeinternet
+  type: trojan
+  server: 135.125.234.148
+  port: 2053
   password: '1234567890'
   sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet
+  type: vless
+  server: 57.129.47.41
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: kfm-bn0.pages.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-2
+      Host: sni.111000.indevs.in
+- name: 俄罗斯联邦/莫斯科/Russia/Moscow/freeinternet
   type: vless
-  server: 57.129.47.29
-  port: 2053
+  server: 158.160.114.71
+  port: 443
+  uuid: 409bdb0f-5aae-4e93-a8dd-60adc47d5fd3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: smartcaptcha.yandexcloud.net
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  client-fingerprint: qq
+- name: 英国/United Kingdom/freeinternet-2
+  type: vless
+  server: 57.129.137.199
+  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.v6.navy
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
+    path: /
     headers:
       Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-3
+- name: 美国/United States/freeinternet-2
   type: vless
-  server: 172.64.152.23
+  server: 135.84.67.42
   port: 443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.31:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-4
-  type: vless
-  server: 104.18.12.149
-  port: 80
-  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: silent-paper-fa57.fipiyag989.workers.dev
-- name: 加拿大/Canada/freeinternet
-  type: vless
-  server: 44.32.224.195
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.rocks
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: sni.111000.v6.rocks
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-3
-  type: vless
-  server: 148.253.215.38
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.latonyamadeline.ndjp.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-- name: 英国/United Kingdom/freeinternet-2
-  type: ss
-  server: 82.38.31.89
-  port: 8080
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  cipher: chacha20-ietf-poly1305
-- name: 荷兰/哈勒姆/The Netherlands/Haarlem/freeinternet
-  type: vless
-  server: 51.158.206.26
-  port: 23576
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-  flow: xtls-rprx-vision
-  tls: true
-  servername: fuck.rkn
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  client-fingerprint: chrome
-- name: 日本/印西市/Japan/Inzai/freeinternet
-  type: trojan
-  server: jp2-8sb.6121999.dpdns.org
-  port: 24534
-  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
-  sni: jp2-8sb.6121999.dpdns.org
-- name: 拉脱维亚/里加/Latvia/Riga/freeinternet
-  type: vless
-  server: 103.231.73.181
-  port: 8443
-  uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tradingview.com
-  reality-opts:
-    public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
-  client-fingerprint: chrome
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-4
-  type: trojan
-  server: 64.226.74.109
-  port: 443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560&https://t.me/WangCai2🇨🇳
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-5
-  type: vless
-  server: 104.18.173.174
-  port: 80
-  uuid: 53342b53-157e-4475-9f3a-40439434e689
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c.iamdt.dpdns.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-6
-  type: vless
-  server: 172.67.155.231
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: INDEX.Arcane509.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assets
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-5
-  type: vless
-  server: 57.129.63.133
-  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.dynv6.net
@@ -211,39 +140,9 @@ proxies:
     path: /
     headers:
       Host: sni.111000.dynv6.net
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-7
+- name: 罗马尼亚/Romania/freeinternet
   type: vless
-  server: auth.vercel.com
-  port: 443
-  uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-  tls: true
-  servername: y6-3cj.pages.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: y6-3cj.pages.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-8
-  type: vless
-  server: 104.18.12.149
-  port: 443
-  uuid: a01daac7-1e65-4645-854d-b47d226f6b08
-  tls: true
-  servername: y6-3cj.PAgES.DEV
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: y6-3cj.PAgES.DEV
-- name: 巴拉圭/亞松森/Paraguay/Asunción/freeinternet
-  type: ss
-  server: 38.165.233.93
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  cipher: aes-256-cfb
-- name: 爱尔兰/Ireland/freeinternet
-  type: vless
-  server: 37.0.6.191
+  server: 45.85.119.191
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
@@ -254,264 +153,39 @@ proxies:
     path: /
     headers:
       Host: sni.my111000.tech
-- name: 波兰/华沙/Poland/Warsaw/freeinternet
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-4
+  type: vless
+  server: 8.39.125.178
+  port: 443
+  uuid: 52f94104-7a84-4342-8bcd-96969eb46cbe
+  tls: true
+  servername: tristandeng.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tristandeng.cc.cd
+- name: 越南/Vietnam/freeinternet
   type: ss
-  server: 217.30.10.70
-  port: 9093
-  password: wfLC2y7rzZyCmuyt
+  server: 103.186.155.44
+  port: 38388
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   cipher: aes-256-cfb
 - name: 英国/United Kingdom/freeinternet-3
-  type: trojan
-  server: 82.26.155.20
-  port: 10369
-  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
-  sni: fra35.chasem2026sud.com
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-9
   type: vless
-  server: 172.64.149.54
-  port: 2052
-  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-6
-  type: trojan
-  server: 134.209.252.120
-  port: 8443
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-10
-  type: vless
-  server: 172.64.146.163
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-2
-  type: ss
-  server: 217.30.10.70
-  port: 9000
-  password: a3GFYt36Sm82Vys9
-  cipher: aes-256-cfb
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-11
-  type: trojan
-  server: www.calmlunch.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.calmlunch.com
-- name: 俄罗斯联邦/Russia/freeinternet
-  type: vless
-  server: fi1.cyphervpn.pro
-  port: 443
-  uuid: f7bae22e-20ab-11f1-835c-0242ac110002
-  tls: true
-  servername: fi1.cyphervpn.pro
-  reality-opts:
-    public-key: z_mZq7riCGYKcTsXGCFX3KyhLL5PYgG3ydZ8_wM_ZkU
-    short-id: 5bfa0c
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-12
-  type: trojan
-  server: v1.dabache.top
-  port: 443
-  password: humanity
-  sni: www.multiplydose.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-7
-  type: trojan
-  server: 104.248.136.46
-  port: 2087
-  password: '1234567890'
-  sni: kfm-bn0.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
-    headers:
-      Host: kfm-bn0.pages.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-8
-  type: vless
-  server: 165.22.18.18
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet
-  type: vless
-  server: 195.181.173.199
-  port: 8443
-  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
-  tls: true
-  servername: ams1.fromblancwithlove.com
-  skip-cert-verify: true
-- name: 阿联酋/迪拜/United Arab Emirates/Dubai/freeinternet
-  type: ss
-  server: 103.57.251.240
-  port: 990
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-13
-  type: vless
-  server: singapore.com
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: index.0x15.workers.DEV
-  network: ws
-  ws-opts:
-    path: /9quSDGMroCZkFeWzTk
-    headers:
-      Host: index.0x15.workers.dev
-- name: 意大利/Italy/freeinternet
-  type: vless
-  server: 204.216.216.23
-  port: 1114
-  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
-  flow: xtls-rprx-vision
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
-    short-id: 79a1e14b
-  client-fingerprint: chrome
-- name: 荷兰/The Netherlands/freeinternet
-  type: ss
-  server: 195.93.253.245
-  port: 49137
-  password: rMeJhia9HhCw1hGcxeVFQf
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet
-  type: vless
-  server: 222.167.202.33
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-2
-  type: vless
-  server: 185.135.86.217
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-    headers:
-      Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-14
-  type: vless
-  server: 8.6.112.0
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-15
-  type: trojan
-  server: 162.159.36.20
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net%3A443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 越南/胡志明市/Vietnam/Ho Chi Minh City/freeinternet
-  type: ss
-  server: 112.197.26.106
-  port: 26417
-  password: fd7b0d14b590bceb
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-16
-  type: vless
-  server: 198.41.222.191
-  port: 80
-  uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: leecher56.matinheydri.workers.dev
-- name: 英国/United Kingdom/freeinternet-4
-  type: vless
-  server: 77.75.199.43
+  server: 91.193.58.134
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: sni.111000.cc.cd
+  servername: sni.111000.v6.rocks
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: sni.111000.cc.cd
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-17
-  type: vmess
-  server: ae135.cowjump.site
-  port: 443
-  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: ae135.cowjump.site
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ae135.cowjump.site
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-2
-  type: ss
-  server: 159.223.236.36
-  port: 19582
-  password: WC0GbiCk67K8nHDaDHmYIX
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-18
+      Host: sni.111000.v6.rocks
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-5
   type: vless
   server: 104.17.95.220
   port: 2052
@@ -521,95 +195,227 @@ proxies:
     path: /7u2613qopnft
     headers:
       Host: index.arcane509.workers.dev
-- name: 英国/United Kingdom/freeinternet-5
-  type: ss
-  server: 82.38.31.194
-  port: 8080
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  cipher: chacha20-ietf-poly1305
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-9
+- name: 美国/United States/freeinternet-3
   type: vless
-  server: 185.158.133.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?telegram🇨🇳 @wangcai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-3
-  type: vless
-  server: 91.84.101.164
-  port: 8443
+  server: 160.153.1.198
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.v6.navy
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2=
+    path: /?Telegram🇨🇳 @WangCai2=
     headers:
       Host: sni.111000.v6.navy
-- name: 塞浦路斯/Cyprus/freeinternet
-  type: vmess
-  server: pq-hungary1.09vpn.com
-  port: 80
-  uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-19
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-6
   type: vless
-  server: 104.18.125.5
-  port: 80
-  uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+  server: 8.6.112.0
+  port: 443
+  uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+  tls: true
+  servername: hio-awx.pages.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lively-brook-c471.nedena3319.workers.dev
-- name: 新加坡/新加坡/Singapore/Singapore/freeinternet
+      Host: hio-awx.pages.dev
+- name: 摩洛哥/Morocco/freeinternet
   type: ss
-  server: 154.26.132.38
-  port: 16922
-  password: 42d2b47181a32de7
+  server: 154.70.207.97
+  port: 990
+  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
   cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-20
-  type: vless
-  server: 104.18.46.50
-  port: 443
-  uuid: 3264ccbe-dbc5-4d14-8dbe-1c62041cc43f
-  tls: true
-  servername: sk-hk1.feimavip.sbs
-  network: ws
-  ws-opts:
-    path: /hk/1
-    headers:
-      Host: sk-hk1.feimavip.sbs
-- name: 亚美尼亚/Armenia/freeinternet
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-2
   type: trojan
-  server: 170.168.102.234
-  port: 2083
-  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
-  sni: xo.e0f.cx
+  server: 104.248.132.134
+  port: 2096
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /trojan-ws
+    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
     headers:
-      Host: xo.e0f.cx
-- name: 保加利亚/Bulgaria/freeinternet
+      Host: kfm-bn0.pages.dev
+- name: 日本/Japan/freeinternet
+  type: vless
+  server: 191.96.29.205
+  port: 13628
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  servername: s5ezgc5n1x5qcfl7ugi7w9afeb.ovtc.qzz.io
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: s5ezgc5n1x5qcfl7ugi7w9afeb.ovtc.qzz.io
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-7
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  sni: www.creationlong.org
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.creationlong.org
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-3
+  type: vless
+  server: 159.65.125.162
+  port: 2087
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: 台湾/台北市/Taiwan/Taipei/freeinternet
   type: ss
-  server: 89.44.197.181
-  port: 31348
-  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
+  server: 185.189.160.105
+  port: 41632
+  password: qwerREWQ@@
+  cipher: aes-256-cfb
+- name: 意大利/Italy/freeinternet
+  type: vless
+  server: sweden.gandopaneel.ir
+  port: 443
+  uuid: d7f67e94-aa9e-4454-b1cf-ce522a0d2728
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet
+  type: vless
+  server: 185.246.152.159
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳+@WangCai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 伊朗/Iran/freeinternet
+  type: trojan
+  server: 213.176.78.192
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-8
+  type: vless
+  server: 172.64.155.209
+  port: 80
+  uuid: 787b3724-16c8-4e58-a038-2b8013cdc6d9
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiTG1jRlUwNjNwVUxvYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: c3linogp4x20x5acoguup217nstesdu1.nobodyface4b13.workers.dev
+- name: 俄罗斯联邦/莫斯科/Russia/Moscow/freeinternet-2
+  type: vless
+  server: 217.168.240.252
+  port: 5443
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
+  client-fingerprint: chrome
+- name: 香港/Hong Kong/freeinternet
+  type: vless
+  server: 156.225.72.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.jpmj.dev
+- name: 英国/United Kingdom/freeinternet-4
+  type: ss
+  server: 82.38.31.62
+  port: 8080
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-21
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-9
+  type: trojan
+  server: sourceforge.net
+  port: 443
+  password: humanity
+  sni: www.calmloud.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmloud.com
+- name: 加拿大/多伦多/Canada/Toronto/freeinternet-2
+  type: vmess
+  server: 23.162.200.227
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /linkvws
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet
+  type: ss
+  server: 154.26.132.38
+  port: 27882
+  password: ded718fcb2bb17b7
+  cipher: chacha20-ietf-poly1305
+- name: 乌克兰/Ukraine/freeinternet
+  type: ss
+  server: 163.171.137.76
+  port: 47394
+  password: eafad96826c79ddd
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-10
+  type: vless
+  server: 162.159.17.189
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  tls: true
+  servername: juzi.qea.ccwu.cc
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: juzi.qea.ccwu.cc
+- name: 英国/伦敦/United Kingdom/London/freeinternet
+  type: vless
+  server: uk1.fromblancwithlove.com
+  port: 8443
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  tls: true
+  servername: uk1.fromblancwithlove.com
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-11
+  type: vless
+  server: vpnpro.eshghiabolfazl2009.workers.dev
+  port: 80
+  uuid: 14e1775b-d92c-455b-8db3-e6c6d61909e0
+  network: ws
+  ws-opts:
+    path: 🔒
+    headers:
+      Host: vpnpro.eshghiabolfazl2009.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-12
   type: vless
   server: 8.6.112.6
   port: 8443
@@ -622,114 +428,189 @@ proxies:
     path: /?Telegram🇨🇳 @WangCai2
     headers:
       Host: sni.111000.dynv6.net
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-4
+- name: 台湾/新北/Taiwan/New Taipei City/freeinternet
+  type: ss
+  server: 36.230.6.242
+  port: 50099
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  cipher: chacha20-ietf-poly1305
+- name: 瑞士/Switzerland/freeinternet-2
+  type: trojan
+  server: 138.124.28.173
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-13
+  type: vless
+  server: 172.66.44.211
+  port: 8880
+  uuid: 0a5ab719-2407-4398-b507-8437ef365023
+  network: ws
+  ws-opts:
+    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
+    headers:
+      Host: underthegun.cfd
+- name: 德国/Germany/freeinternet
+  type: vmess
+  server: 77.90.11.178
+  port: 80
+  uuid: b3cdfe2d-5eac-4b0d-a8eb-d3f6a647e13f
+  alterId: 0
+  cipher: auto
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-2
+  type: ss
+  server: 159.223.236.36
+  port: 19582
+  password: WC0GbiCk67K8nHDaDHmYIX
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-14
+  type: vless
+  server: ::ffff:6812:124f
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /4juk3zhs7tic
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-3
   type: ss
   server: switcher-nick-croquet.freesocks.work
   port: 443
-  password: RFK38Cg7APneSB5cWDcpbm
+  password: 9tqhMdIrTkgQ46PvhyAtMH
   cipher: chacha20-ietf-poly1305
-- name: 荷兰/The Netherlands/freeinternet-2
-  type: vless
-  server: 185.198.167.93
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-    headers:
-      Host: sni.111000.v6.navy
-- name: 德国/Germany/freeinternet
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-22
-  type: vless
-  server: 162.159.36.5
-  port: 2083
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: newwk1.f1w.de5.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: newwk1.f1w.de5.net
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-23
-  type: vless
-  server: 104.26.13.31
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sany.tara132.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sni.111000.dynv6.net/
-    headers:
-      Host: sany.tara132.workers.dev
-- name: 摩尔多瓦/Moldova/freeinternet
-  type: vmess
-  server: 94.131.108.36
-  port: 443
-  uuid: 9855f1f0-a800-40d4-8b38-c7d3eb79302d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 荷兰/The Netherlands/freeinternet-3
-  type: vless
-  server: 195.93.253.207
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 印度/India/freeinternet
+- name: 荷兰/The Netherlands/freeinternet
   type: ss
-  server: 185.67.125.109
-  port: 11201
-  password: be4a6fd2209f62a7
+  server: 193.29.139.227
+  port: 8080
+  password: QCXDxuDlTTMD7jtgHUjIoj
   cipher: chacha20-ietf-poly1305
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-5
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-15
   type: vless
-  server: 146.103.100.127
-  port: 2053
+  server: saas.sin.fan
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?proxyip=ip.111000.de5.net%3A443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 罗马尼亚/Romania/freeinternet-2
+  type: vless
+  server: 45.12.30.138
+  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.indevs.in
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳+@WangCai2=
+    path: /?telegram🇨🇳@wangcai2=
     headers:
       Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-24
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-2
+  type: ss
+  server: 194.233.73.51
+  port: 48802
+  password: 7afa39016d5a409c
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-16
   type: vless
-  server: time.is
+  server: 104.17.72.206
+  port: 80
+  uuid: 1de37726-744b-46e1-9101-c926b3402e82
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: v2.v2configlab.workers.dev
+- name: 爱沙尼亚/Estonia/freeinternet
+  type: trojan
+  server: 91.184.250.116
+  port: 2083
+  password: q2jXRWncMA7pQren_VjQKhSQfoBWK_
+  sni: xo.e0f.cx
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: xo.e0f.cx
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-17
+  type: vless
+  server: adf.ly
   port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
   tls: true
-  servername: 1-bhn.pages.dev
+  servername: rAyAn-007.pArViN.DpDnS.OrG
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 1-bhn.pages.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-25
+      Host: rayan-007.parvin.dpdns.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-18
+  type: vless
+  server: 104.17.109.71
+  port: 2082
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /jeyk7gbxzfe1
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 阿根廷/Argentina/freeinternet
+  type: ss
+  server: 154.205.154.200
+  port: 11201
+  password: 4f26d8bb593a5fc5
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-4
+  type: vless
+  server: 135.84.64.226
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳@WangCai2=
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-19
+  type: vless
+  server: 172.67.150.254
+  port: 2095
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: iioo.iioou.workers.dev
+- name: 美国/北伯根/United States/North Bergen/freeinternet
+  type: vless
+  server: 137.184.218.169
+  port: 36925
+  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-20
   type: vless
   server: 104.24.68.193
   port: 443
@@ -742,113 +623,374 @@ proxies:
     path: ws
     headers:
       Host: wild-grass-1917.tmpduardoolfsonerluke15.workers.dev
-- name: 巴基斯坦/Pakistan/freeinternet
-  type: ss
-  server: 119.159.245.24
-  port: 26737
-  password: 1d1bc54689ed4b75
-  cipher: chacha20-ietf-poly1305
-- name: 奥地利/Austria/freeinternet
+- name: 法国/France/freeinternet-2
   type: vless
-  server: 152.53.51.29
-  port: 22955
-  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  server: 57.128.176.82
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: one-piece.com
-  reality-opts:
-    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 法国/France/freeinternet
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: sni.111000.indevs.in
+- name: 美国/United States/freeinternet-5
   type: vless
-  server: 51.91.253.60
+  server: 18.245.54.3
   port: 443
+  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
+  tls: true
+  servername: d23iuljn5k9z1j.cloudfront.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: d23iuljn5k9z1j.cloudfront.net
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet
+  type: vless
+  server: 154.26.177.151
+  port: 8443
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  tls: true
+  servername: sni.skylee4.cloudns.ch
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: sni.skylee4.cloudns.ch
+- name: 荷兰/The Netherlands/freeinternet-2
+  type: vless
+  server: 5.10.245.43
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.cc.cd
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.cc.cd
+- name: 英国/伦敦/United Kingdom/London/freeinternet-2
+  type: ss
+  server: admin.c1.havij.co
+  port: 443
+  password: 1kVr0KATIJI7mwOF
+  cipher: chacha20-ietf-poly1305
+- name: 法国/France/freeinternet-3
+  type: vless
+  server: 51.91.249.22
+  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.v6.navy
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳+@WangCai2=
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
     headers:
       Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-26
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-4
   type: vless
-  server: 8.6.112.191
+  server: 46.101.254.53
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: 罗马尼亚/布加勒斯特/Romania/Bucharest/freeinternet
+  type: vless
+  server: 82.117.255.37
+  port: 8443
+  uuid: e033ef6e-ab4b-47d4-a523-ff568d2c8dbb
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tradingview.com
+  reality-opts:
+    public-key: TH8C9sgNuMRVR3o5QehXPgYw8PWjoHrH2rVQF4JWwGI
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-21
+  type: vless
+  server: chatgpt.com
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
+- name: 波兰/华沙/Poland/Warsaw/freeinternet
+  type: vless
+  server: 45.138.16.58
+  port: 30086
+  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
+  network: grpc
+  grpc-opts:
+    grpc-service-name: gprc
+- name: 美国/哈肯萨克/United States/Hackensack/freeinternet
+  type: vless
+  server: 95.164.85.109
+  port: 59374
+  uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
+    short-id: d21e7c
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-22
+  type: vless
+  server: 188.114.98.0
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: sni.my111000.tech
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: Telegram🇨🇳@WangCai2/
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
     headers:
-      Host: sni.my111000.tech
-- name: 瑞典/Sweden/freeinternet
+      Host: sni.111000.indevs.in
+- name: 马来西亚/吉隆坡/Malaysia/Kuala Lumpur/freeinternet
+  type: vmess
+  server: 47.250.45.234
+  port: 43063
+  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
+- name: 乌克兰/Ukraine/freeinternet-2
   type: vless
-  server: 185.146.173.20
-  port: 443
-  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  server: 85.137.52.230
+  port: 8443
+  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
+  flow: xtls-rprx-vision
   tls: true
-  servername: qyi.fqjd663.ggff.net
+  servername: gwapp-nl01.freenets.store
+  reality-opts:
+    public-key: 3VpWLkd8rOkubuhzrNMT8sIAdSgMazBQfE3OdMtjKSA
+  client-fingerprint: chrome
+- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet
+  type: ss
+  server: 193.47.60.186
+  port: 28687
+  password: yKVMoB3AwiTEznpnoq2FYR
+  cipher: chacha20-ietf-poly1305
+- name: 法国/France/freeinternet-4
+  type: ss
+  server: 51.75.168.50
+  port: 13030
+  password: 6c815bb84c781da5
+  cipher: chacha20-ietf-poly1305
+- name: 英国/United Kingdom/freeinternet-5
+  type: trojan
+  server: 82.26.155.20
+  port: 10369
+  password: n5ix4FcMQYENMQPL+YKbvyJ8nZ84+bNTsj
+  sni: fra35.chasem2026sud.com
   skip-cert-verify: true
+- name: 爱尔兰/Ireland/freeinternet
+  type: vless
+  server: 78.17.57.159
+  port: 443
+  uuid: 4ccff2bb-b761-40f0-95ec-a58b38862dab
+  flow: xtls-rprx-vision
+  tls: true
+  servername: stats.vk-portal.net
+  reality-opts:
+    public-key: e04qlMREgpP2TmLJ0kzf4tYjnuBMT87k0RuQebPe2Bg
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-3
+  type: ss
+  server: 194.233.94.119
+  port: 80
+  password: 8t2xeemUtyui4zAv
+  cipher: aes-256-gcm
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-4
+  type: vless
+  server: 212.34.142.191
+  port: 8443
+  uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
+  flow: xtls-rprx-vision
+  tls: true
+  servername: tradingview.com
+  reality-opts:
+    public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
+    short-id: f7aa9e61197d3ac6
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-23
+  type: vless
+  server: 104.26.1.221
+  port: 443
+  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
+  tls: true
+  servername: dabaius2.sylu.net
+  network: ws
+  ws-opts:
+    path: /db10240eb751d6ab
+    headers:
+      Host: dabaius2.sylu.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-24
+  type: vless
+  server: 172.67.137.154
+  port: 443
+  uuid: 49d598ee-4dfc-4001-95ca-99a5b6002e3c
+  tls: true
+  servername: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
+- name: 塞舌尔/Seychelles/freeinternet
+  type: vless
+  server: 154.197.75.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳@WangCai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-5
+  type: ss
+  server: 57.129.95.38
+  port: 11201
+  password: f54cdee10f8b25ce
+  cipher: chacha20-ietf-poly1305
+- name: 荷兰/The Netherlands/freeinternet-3
+  type: ss
+  server: 193.29.139.179
+  port: 8080
+  password: cvII85TrW6n0OGyfpHVS1u
+  cipher: chacha20-ietf-poly1305
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-6
+  type: ss
+  server: 57.129.95.198
+  port: 11201
+  password: d6b0973401858b29
+  cipher: chacha20-ietf-poly1305
+- name: 拉脱维亚/里加/Latvia/Riga/freeinternet
+  type: vless
+  server: 185.135.86.217
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-25
+  type: vless
+  server: 188.114.97.3
+  port: 443
+  uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
+  tls: true
+  servername: labeller.neonime83.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: qyi.fqjd663.ggff.net
-- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-2
-  type: ss
-  server: 154.26.132.38
-  port: 27885
-  password: ded718fcb2bb17b7
-  cipher: chacha20-ietf-poly1305
+      Host: labeller.neonime83.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-26
+  type: vless
+  server: 104.18.46.50
+  port: 443
+  uuid: 3264ccbe-dbc5-4d14-8dbe-1c62041cc43f
+  tls: true
+  servername: sk-hk1.feimavip.sbs
+  network: ws
+  ws-opts:
+    path: /hk/1
+    headers:
+      Host: sk-hk1.feimavip.sbs
+- name: 美国/United States/freeinternet-6
+  type: vmess
+  server: 149.30.232.103
+  port: 31469
+  uuid: 5381445d-6ae4-4948-b61a-a16d9498d21b
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /arki
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-27
   type: vless
-  server: creativecommons.org
-  port: 2052
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  server: 162.159.36.20
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /assets
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
     headers:
-      Host: index.0x14.workers.dev
+      Host: sni.jpmj.dev
+- name: 英国/United Kingdom/freeinternet-6
+  type: vless
+  server: 138.68.152.227
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.rocks
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.111000.v6.rocks
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-28
   type: vless
-  server: 172.66.40.99
-  port: 2083
-  uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+  server: ::ffff:6818:19
+  port: 2096
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
   tls: true
-  servername: yousef.varzesh.dpdns.org
+  servername: EMS.Arc-Time.Workers.DEV
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /a82a7uco7z62
     headers:
-      Host: yousef.varzesh.dpdns.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-29
+      Host: ems.arc-time.workers.dev
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-7
   type: vless
-  server: 162.159.13.20
+  server: 85.208.139.108
   port: 443
-  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: juzi.qea.ccwu.cc
+  servername: sni.111000.dynv6.net
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?Telegram🇨🇳 @WangCai2=
     headers:
-      Host: juzi.qea.ccwu.cc
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-10
+      Host: sni.111000.dynv6.net
+- name: 荷兰/The Netherlands/freeinternet-4
   type: ss
-  server: 8.209.74.72
-  port: 20001
-  password: PWpjPo3tqhPN4yRZ
+  server: 193.29.139.157
+  port: 8080
+  password: 4a2rfixophdjffa8KVA4Aa
   cipher: chacha20-ietf-poly1305
-- name: 美国/洛杉矶/United States/Los Angeles/freeinternet
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-2
   type: vmess
   server: usaapp1.jisuyun.top
   port: 2053
@@ -863,343 +1005,149 @@ proxies:
     path: /usavm
     headers:
       Host: usaapp1.jisuyun.top
-- name: 印度/孟买/India/Mumbai/freeinternet
+- name: 美国/United States/freeinternet-7
   type: vless
-  server: 144.24.126.26
-  port: 443
-  uuid: 1027b850-de79-4a94-b337-eccdac28e141
-  tls: true
-  servername: g.sandesh.qzz.io
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: g.sandesh.qzz.io
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-3
-  type: ss
-  server: 217.30.10.70
-  port: 9040
-  password: p9z5BVADH2YFs3MN
-  cipher: aes-256-cfb
-- name: 越南/胡志明市/Vietnam/Ho Chi Minh City/freeinternet-2
-  type: ss
-  server: 112.197.26.106
-  port: 45311
-  password: ca5a5efae00a832b
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-30
-  type: vless
-  server: 104.17.15.87
-  port: 80
-  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: germany.xydcqd.workers.dev
-- name: 俄罗斯联邦/Russia/freeinternet-2
-  type: vmess
-  server: 45.89.52.207
-  port: 39651
-  uuid: ac4c12c5-45f2-4398-a718-9983941ede2b
-  alterId: 0
-  cipher: auto
-- name: 香港/Hong Kong/freeinternet
-  type: ss
-  server: 112.213.102.188
-  port: 41632
-  password: qwerREWQ@@
-  cipher: aes-256-cfb
-- name: 印度/孟买/India/Mumbai/freeinternet-2
-  type: ss
-  server: 163.171.206.24
-  port: 28028
-  password: 735582e51328af99
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-31
-  type: vless
-  server: 172.67.134.82
-  port: 443
-  uuid: a73b8135-ec7a-4f70-bac6-81fbccad4515
-  tls: true
-  servername: labeller.neonime83.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: labeller.neonime83.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-32
-  type: vless
-  server: 104.18.32.47
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: sni.111000.indevs.in
-- name: 摩尔多瓦/Moldova/freeinternet-2
-  type: vless
-  server: 94.131.8.19
-  port: 45448
-  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: MmEVCRy11fz67vYJQWyA2a_ZPMBzv2le2cus1XSSI0E
-    short-id: 958639bf55e679
-  client-fingerprint: chrome
-- name: 印度/孟买/India/Mumbai/freeinternet-3
-  type: ss
-  server: 163.171.206.24
-  port: 44236
-  password: 9d97433688e7efd5
-  cipher: chacha20-ietf-poly1305
-- name: 俄罗斯联邦/莫斯科/Russia/Moscow/freeinternet
-  type: vless
-  server: 158.160.231.108
-  port: 8443
-  uuid: 0ff47d28-d0d6-4d8f-9d44-593ea39d828f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ads.x5.ru
-  reality-opts:
-    public-key: YBKQqcPbFlOY4Yw-DUUldDBQ0PZwq9Ergd-YbRHzy2I
-    short-id: 6ba85179e30d4fc2
-  client-fingerprint: chrome
-- name: 韩国/首尔特别市/South Korea/Seoul/freeinternet
-  type: vmess
-  server: kr01.a0a.xyz
-  port: 19568
-  uuid: 641500bf-92f9-4720-e2e7-579a8f7dbb04
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: kr01.a0a.xyz
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-33
-  type: vless
-  server: 104.24.45.247
-  port: 80
-  uuid: 2e71d8fc-d2e8-44fc-89bd-c8a449a193aa
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: odd-bread-435d.ahmadrezasteamacc.workers.dev
-- name: 美国/United States/freeinternet-3
-  type: vless
-  server: 45.40.153.191
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.my111000.tech
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
-    headers:
-      Host: sni.my111000.tech
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-34
-  type: vless
-  server: 172.66.44.211
-  port: 8880
-  uuid: 0a5ab719-2407-4398-b507-8437ef365023
-  network: ws
-  ws-opts:
-    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
-    headers:
-      Host: underthegun.cfd
-- name: 美国/United States/freeinternet-4
-  type: ss
-  server: tinkered-pennies-puppies.freesocks.work
-  port: 443
-  password: hbGrpfvNrJsUmKmPbR3iY2
-  cipher: chacha20-ietf-poly1305
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-4
-  type: ss
-  server: 217.30.10.70
-  port: 9046
-  password: NvS8N4Vf8qAGPSCL
-  cipher: aes-256-cfb
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-35
-  type: vless
-  server: 172.66.1.143
-  port: 443
-  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
-  tls: true
-  servername: rAyAn-007.fOtOn.dPdNs.oRg
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.foton.dpdns.org
-- name: 美国/圣克拉拉/United States/Santa Clara/freeinternet
-  type: ss
-  server: 71.19.148.143
-  port: 443
-  password: p78naCf2EfOlRSLTX0wFVx
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-2
-  type: vless
-  server: 222.167.202.47
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.47:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 荷兰/The Netherlands/freeinternet-4
-  type: vless
-  server: 5.10.244.43
+  server: 14.102.229.43
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.111000.cc.cd
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?https://t.me/wangcai2🇨🇳=
+    path: /?https%3A%2F%2Ft.me%2Fwangcai2%F0%9F%87%A8%F0%9F%87%B3=
     headers:
       Host: sni.111000.cc.cd
-- name: 荷兰/The Netherlands/freeinternet-5
-  type: vless
-  server: 141.11.197.127
-  port: 55269
-  uuid: 231e88bb-3a39-4f26-848e-908f83070283
-  tls: true
-  servername: vk.ru
-  reality-opts:
-    public-key: i1e3hqslC-n7XGp72HmDKU7ZuRk72pHbzujbNaYF-0s
-    short-id: 8f
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-36
-  type: vless
-  server: 172.64.149.54
-  port: 443
-  uuid: 77534396-dead-4a6c-8761-03939cd4fdc8
-  tls: true
-  servername: my.vulmart.ir
-  skip-cert-verify: true
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet
+  type: vmess
+  server: 47.244.120.197
+  port: 44867
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: my.vulmart.ir
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-37
+    path: /arki
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-29
   type: vless
-  server: 104.18.34.21
-  port: 8443
-  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
-  tls: true
-  servername: socks5.revil-time3.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: socks5.revil-time3.workers.dev
-- name: 德国/兰河畔林堡/Germany/Limburg an der Lahn/freeinternet
-  type: ss
-  server: 57.129.35.242
-  port: 11201
-  password: b2871db02e5f7e2f
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-38
-  type: vless
-  server: usa.visa.com
-  port: 443
-  uuid: a114d067-b900-4f60-87a5-50d4d63972b8
-  tls: true
-  servername: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
-- name: 立陶宛/Lithuania/freeinternet
-  type: vless
-  server: 89.116.250.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-39
-  type: vless
-  server: 104.17.201.245
-  port: 2052
+  server: 104.21.64.250
+  port: 2053
   uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: INDEX.Arcane509.Workers.DEV
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /x0o2qglxz7zu
+    path: /assets
     headers:
       Host: index.arcane509.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-40
+- name: 俄罗斯联邦/圣彼得堡/Russia/St Petersburg/freeinternet
   type: vless
-  server: 104.17.72.206
-  port: 80
-  uuid: 1de37726-744b-46e1-9101-c926b3402e82
+  server: 5.188.156.138
+  port: 4443
+  uuid: 2cbd01de-4c6b-4b7a-89b2-2da483c9d314
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-30
+  type: vless
+  server: 104.18.13.149
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram@V2rayAlpha
+    headers:
+      Host: sni.111000.v6.navy
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-31
+  type: vless
+  server: 8.6.112.6
+  port: 443
+  uuid: 7f6a8bf3-e8fc-473e-8acb-acee6321ec40
+  tls: true
+  servername: tbp.zuhn.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /test
+    headers:
+      Host: tbp.zuhn.ir
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-8
+  type: vless
+  server: new-de.vcfco.ir
+  port: 7500
+  uuid: e679aa5e-fde0-4e9f-ad46-63725e1c47f3
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn77.com
+  reality-opts:
+    public-key: 8a3blVdAACDlvRA5zrdNxHLZ9boU5QkwGMkf0WwyZVI
+    short-id: 77a3a1c829040294
+  client-fingerprint: chrome
+- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet-2
+  type: vless
+  server: 46.62.128.207
+  port: 443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cloudflare.com
+  reality-opts:
+    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
+    short-id: 7cad5040
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-32
+  type: vless
+  server: 104.18.12.149
+  port: 443
+  uuid: 2b8d9d73-0031-42f9-9914-c8c579e087cb
+  tls: true
+  servername: fire.rezazzz.ir
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /movie
+    headers:
+      Host: fire.rezazzz.ir
+- name: 俄罗斯联邦/莫斯科/Russia/Moscow/freeinternet-3
+  type: vless
+  server: 193.233.103.243
+  port: 443
+  uuid: 09a429d9-6ffa-43f3-8b3a-c634dbdda94d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  reality-opts:
+    public-key: V6m8_CGU_f4Ym9yFxreUjm6rUBzvE4eNg_GHKWp0MG4
+    short-id: e178a9d7bb36a98e
+  client-fingerprint: chrome
+- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet
+  type: vless
+  server: 83.222.23.81
+  port: 38065
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-33
+  type: vmess
+  server: cf.090227.xyz
+  port: 443
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: sgal.dagrate.eu.org
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: v2.v2configlab.workers.dev
-- name: 法国/France/freeinternet-2
-  type: vless
-  server: 145.239.8.221
-  port: 443
-  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.leboncoin.fr
-  reality-opts:
-    public-key: ESRdmody9xdWVTaCtyGLg_LDopyMm9bUYDWH8NVWtjE
-    short-id: c906f73d3ba8211f
-  client-fingerprint: chrome
-- name: 希腊/雅典/Greece/Athens/freeinternet
-  type: ss
-  server: 38.54.29.18
-  port: 11201
-  password: 932a519c8147a998
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-41
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 2083
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: cIAllO-EGB.pAGES.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /%252F
-    headers:
-      Host: cIAllO-EGB.pAGES.dev
-- name: 英国/朴次茅斯/United Kingdom/Portsmouth/freeinternet
-  type: ss
-  server: 149.102.132.186
-  port: 80
-  password: YhzqOeJsfuZ9rkkc
-  cipher: aes-256-gcm
-- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-2
+      Host: sgal.dagrate.eu.org
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-3
   type: vmess
   server: 10.a400.top
   port: 44742
@@ -1214,22 +1162,155 @@ proxies:
     path: /
     headers:
       Host: 10.a400.top
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-42
+- name: 印度/孟买/India/Mumbai/freeinternet
+  type: ss
+  server: 163.171.206.24
+  port: 44236
+  password: 9d97433688e7efd5
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-34
   type: vless
-  server: 172.64.147.104
+  server: 104.18.32.47
+  port: 2052
+  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+  network: ws
+  ws-opts:
+    path: 🔒
+    headers:
+      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+- name: 立陶宛/Lithuania/freeinternet
+  type: vless
+  server: 188.214.129.172
   port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: 1c45e98c-8a4a-45e7-acc5-3a3cc962f463
+  flow: xtls-rprx-vision
   tls: true
-  servername: 3-2h8.pages.dev
+  servername: flowwow.com
+  reality-opts:
+    public-key: h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw
+  client-fingerprint: chrome
+- name: 越南/胡志明市/Vietnam/Ho Chi Minh City/freeinternet
+  type: ss
+  server: 112.197.26.106
+  port: 45313
+  password: ca5a5efae00a832b
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-8
+  type: vless
+  server: 192.0.54.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram🇨🇳 @wangcai2=
+    headers:
+      Host: sni.jpmj.dev
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-5
+  type: vless
+  server: 212.34.148.122
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳 @WangCai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-35
+  type: vless
+  server: 104.19.174.68
+  port: 443
+  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
+  tls: true
+  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 3-2h8.pages.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-3
+      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-36
   type: vless
-  server: 222.167.202.52
+  server: 162.159.38.129
+  port: 80
+  uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+  network: ws
+  ws-opts:
+    path: /?ed%3D2048
+    headers:
+      Host: leecher56.matinheydri.workers.dev
+- name: 俄罗斯联邦/Russia/freeinternet
+  type: vless
+  server: 37.18.15.84
+  port: 443
+  uuid: 198d2e21-32d3-4879-819f-5a30902852cb
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rbc.ru
+  reality-opts:
+    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
+    short-id: dc8109baf0f607ea
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-37
+  type: vless
+  server: ::ffff:104.21.69.164
+  port: 2087
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  network: ws
+  ws-opts:
+    path: /yyru4ludskje
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 保加利亚/Bulgaria/freeinternet
+  type: ss
+  server: 89.44.197.181
+  port: 31348
+  password: zDLmeWRsfcFdKT1Tpy02xodEToqCldTxvZcRoPIZZtBdnIEL
+  cipher: chacha20-ietf-poly1305
+- name: 英国/United Kingdom/freeinternet-7
+  type: vless
+  server: staging.lastilhame.monster
+  port: 443
+  uuid: ee39fb11-56a3-4ee7-9e7c-35a4235bd30e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tradingview.com
+  reality-opts:
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: b27ba098687b
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-38
+  type: vless
+  server: 104.16.80.73
+  port: 8443
+  uuid: 4dc0b42a-1a8a-4337-851b-5d8a1f149fca
+  tls: true
+  servername: superconducting.turboo-server.space
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: superconducting.turboo-server.space
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-39
+  type: vless
+  server: 104.18.15.19
+  port: 80
+  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-2
+  type: vless
+  server: 222.167.202.4
   port: 7443
   uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
   tls: true
@@ -1237,16 +1318,36 @@ proxies:
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /222.167.202.52:7443
+    path: /222.167.202.4:7443
     headers:
       Host: 2026.hhhhh.eu.org
-- name: 巴基斯坦/Pakistan/freeinternet-2
-  type: ss
-  server: 119.159.245.24
-  port: 29700
-  password: fec4e6f9e954aead
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-4
+- name: 法国/France/freeinternet-5
+  type: vless
+  server: 57.128.177.176
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram
+    headers:
+      Host: sni.111000.v6.navy
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-6
+  type: vless
+  server: 91.84.101.164
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-3
   type: vmess
   server: 47.243.135.74
   port: 55185
@@ -1256,301 +1357,505 @@ proxies:
   network: ws
   ws-opts:
     path: /Notif_Chat
-- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-3
+- name: 澳大利亚/邦加里比/Australia/Bungarribee/freeinternet
+  type: vless
+  server: 192.9.162.122
+  port: 1443
+  uuid: 7a169e43-ff85-4572-9843-ba7207d07319
+  flow: xtls-rprx-vision
+  tls: true
+  servername: swdist.apple.com
+  reality-opts:
+    public-key: ZIBYUH_qQSeI1T6xImXG6MEZXP2yZW3NqGa8W69Cfyk
+    short-id: dde50f55d81116
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-40
+  type: vless
+  server: 1password.com
+  port: 443
+  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
+  tls: true
+  servername: rAyAn-007.fOtOn.dPdNs.oRg
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.fOtOn.dPdNs.oRg
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-41
+  type: vless
+  server: 172.67.164.152
+  port: 443
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  tls: true
+  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+- name: 印度/India/freeinternet
   type: ss
-  server: 194.233.73.51
-  port: 48804
-  password: 7afa39016d5a409c
+  server: 185.67.125.109
+  port: 11201
+  password: be4a6fd2209f62a7
   cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-42
+  type: vless
+  server: 104.16.250.22
+  port: 443
+  uuid: 17ebee4e-97ea-4cad-8737-cc228478ca9d
+  tls: true
+  servername: lively-brook-c471.nedena3319.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lively-brook-c471.nedena3319.workers.dev
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-43
   type: vless
-  server: www.visa.com.sg
-  port: 8880
-  uuid: 78c5b6bd-1cb6-463c-bcba-9f17ef70c85b
+  server: 104.21.75.235
+  port: 443
+  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  tls: true
+  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ancient-heart-60c5.dpccgizieb.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-44
+  type: vless
+  server: 104.17.15.87
+  port: 80
+  uuid: f929cc78-e2a1-4ce3-8051-3e9538405144
+  network: ws
+  ws-opts:
+    path: /@WireXnet
+    headers:
+      Host: germany.xydcqd.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-45
+  type: vless
+  server: 172.66.1.143
+  port: 443
+  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
+  tls: true
+  servername: rAyAn-007.fOtOn.dPdNs.oRg
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: square-frost-8d11.9660004.workers.dev
-- name: 法国/巴黎/France/Paris/freeinternet
+      Host: rayan-007.foton.dpdns.org
+- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet-3
   type: vless
-  server: 205.237.107.192
+  server: 144.31.19.131
   port: 443
-  uuid: 7a5aed7d-8e71-499c-a6e6-d96a204ac88f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: to-do.digital
-  reality-opts:
-    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-44
-  type: trojan
-  server: 172.64.147.24
-  port: 443
-  password: humanity
-  sni: www.gossipglove.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.gossipglove.com
-- name: 塞舌尔/Seychelles/freeinternet
-  type: vless
-  server: 154.197.75.138
-  port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
+  servername: sni.111000.v6.rocks
   network: ws
   ws-opts:
-    path: /?Telegram🇨🇳@WangCai2=
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
     headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-45
-  type: trojan
-  server: 162.159.36.5
-  port: 443
-  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  sni: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-6
-  type: vless
-  server: nltw4.lckdwn.ru
-  port: 8443
-  uuid: 1c61a6c0-9bc7-4cb8-9188-6d86d5989388
-  tls: true
-  servername: nltw4.lckdwn.ru
-  reality-opts:
-    public-key: XEWgLksY3vnV9riMEO7AZ7HR0Ecv3HxXLFglZtcmx00
-    short-id: d5
-  client-fingerprint: chrome
+      Host: sni.111000.v6.rocks
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-46
   type: vless
-  server: 172.67.203.94
-  port: 2086
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  server: 104.16.164.44
+  port: 80
+  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: iioo.iioou.workers.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-5
-  type: vless
-  server: 222.167.202.45
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
+      Host: amirvpn.amirhm00100.workers.dev
+- name: 埃及/Egypt/freeinternet
+  type: ss
+  server: 38.54.59.16
+  port: 11201
+  password: 6ff1423f61ffe673
+  cipher: chacha20-ietf-poly1305
+- name: 马来西亚/吉隆坡/Malaysia/Kuala Lumpur/freeinternet-2
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /222.167.202.45:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 荷兰/The Netherlands/freeinternet-6
-  type: ss
-  server: 193.29.139.157
-  port: 8080
-  password: 4a2rfixophdjffa8KVA4Aa
-  cipher: chacha20-ietf-poly1305
+    path: /arki
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-47
   type: vless
-  server: ciallo-egb.pages.dev
-  port: 8443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiallO-eGb.pAGEs.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /%252F
-    headers:
-      Host: CiallO-eGb.pAGEs.Dev
-- name: 美国/United States/freeinternet-5
-  type: ss
-  server: 107.172.250.161
-  port: 59556
-  password: QTmLViU4VEmuwbOxUw4IXd
-  cipher: chacha20-ietf-poly1305
-- name: 南非/South Africa/freeinternet
-  type: vless
-  server: 139.84.235.99
+  server: 104.18.2.150
   port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  uuid: a114d067-b900-4f60-87a5-50d4d63972b8
   tls: true
-  servername: 1-jk1.pages.dev
+  servername: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: 1-jk1.pages.dev
-- name: 英国/United Kingdom/freeinternet-6
-  type: ss
-  server: 138.68.153.223
-  port: 46576
-  password: idMvoewrSyLLvEvP03k9zR
-  cipher: chacha20-ietf-poly1305
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-11
-  type: vless
-  server: 194.107.126.20
-  port: 44406
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.latonyamadeline.ndjp.net
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.latonyamadeline.ndjp.net
-- name: 印度/India/freeinternet-2
-  type: ss
-  server: 139.59.87.22
-  port: 16970
-  password: 6ThD1AgwXc8Stpp7hEohLa
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-48
-  type: trojan
-  server: 104.18.13.149
-  port: 443
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-    headers:
-      Host: www.ignitelimit.com
-- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-3
-  type: ss
-  server: 185.176.221.72
-  port: 24637
-  password: MholStyHL7DhrewKbpQa20
-  cipher: chacha20-ietf-poly1305
-- name: 美国/United States/freeinternet-6
-  type: vless
-  server: 135.84.64.226
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-6
-  type: vless
-  server: 222.167.202.16
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.16:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 英国/United Kingdom/freeinternet-7
-  type: vless
-  server: 5.180.97.139
-  port: 443
-  uuid: a384c715-aeb5-45e8-859b-f687ca6c083f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
-    short-id: 9f35da6c9412b832
-  client-fingerprint: chrome
-- name: 南非/约翰内斯堡/South Africa/Johannesburg/freeinternet
-  type: ss
-  server: 102.133.165.160
-  port: 16233
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-49
-  type: vless
-  server: 172.67.160.139
-  port: 443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /o9igw94d2qjy
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-50
-  type: vless
-  server: vpnpro.eshghiabolfazl2009.workers.dev
-  port: 80
-  uuid: 14e1775b-d92c-455b-8db3-e6c6d61909e0
-  network: ws
-  ws-opts:
-    path: 🔒
-    headers:
-      Host: vpnpro.eshghiabolfazl2009.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-51
-  type: vless
-  server: 104.17.72.206
-  port: 443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: '****/222****.167.202.31:7443'
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet
+      Host: PaRiSA-CC5Zk0.paRISa-44c.woRKeRs.dev
+- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet-2
   type: vless
   server: 194.59.5.238
   port: 2096
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   servername: sni.jpmj.dev
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?telegram🇨🇳 @wangcai2=
+    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
     headers:
       Host: sni.jpmj.dev
+- name: 荷兰/The Netherlands/freeinternet-5
+  type: vless
+  server: 45.131.208.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+- name: 荷兰/The Netherlands/freeinternet-6
+  type: vless
+  server: 45.131.209.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: Telegram%F0%9F%87%A8%F0%9F%87%B3@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-48
+  type: vless
+  server: 198.41.222.191
+  port: 80
+  uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: leecher56.matinheydri.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-49
+  type: vless
+  server: 104.16.149.66
+  port: 80
+  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: mute-violet-c674.poviy66273.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-50
+  type: vless
+  server: 104.24.45.247
+  port: 80
+  uuid: 2e71d8fc-d2e8-44fc-89bd-c8a449a193aa
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: odd-bread-435d.ahmadrezasteamacc.workers.dev
+- name: 塞浦路斯/Cyprus/freeinternet
+  type: vmess
+  server: pq-hungary1.09vpn.com
+  port: 80
+  uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 美国/United States/freeinternet-9
+  type: vless
+  server: 14.102.228.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40WangCai2=
+    headers:
+      Host: sni.jpmj.dev
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-4
+  type: vless
+  server: 222.167.202.6
+  port: 7443
+  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  tls: true
+  servername: 2026.hhhhh.eu.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /222.167.202.6:7443
+    headers:
+      Host: 2026.hhhhh.eu.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-51
+  type: vless
+  server: auth.vercel.com
+  port: 443
+  uuid: a01daac7-1e65-4645-854d-b47d226f6b08
+  tls: true
+  servername: y6-3cj.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: y6-3cj.pages.dev
+- name: 德国/兰河畔林堡/Germany/Limburg an der Lahn/freeinternet
+  type: ss
+  server: 141.95.109.94
+  port: 11201
+  password: 10f90af92b6c1a74
+  cipher: chacha20-ietf-poly1305
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-52
   type: vless
-  server: 104.19.35.216
-  port: 443
-  uuid: 0ca855d9-7c03-40eb-929b-919f934abdc3
+  server: 104.18.173.174
+  port: 80
+  uuid: 53342b53-157e-4475-9f3a-40439434e689
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c.iamdt.dpdns.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-53
+  type: vless
+  server: 104.18.241.114
+  port: 2095
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /l25hqs0onbig
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 英国/United Kingdom/freeinternet-8
+  type: ss
+  server: 185.5.38.111
+  port: 55988
+  password: bZ87amPpdG7KuWM62bKtm1KHoowuVjnV8CKtq653ymHcg2dPYcPJfnaQ61stuAjr2ZiLDaqH56XpkxEYuwDzzRrMWieebWGt
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-54
+  type: vless
+  server: chatgpt.com
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: amirvpn.amirhm00100.workers.dev
+  servername: index.0x15.workers.DEV
+  network: ws
+  ws-opts:
+    path: /9quSDGMroCZkFeWzTk
+    headers:
+      Host: index.0x15.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-55
+  type: vless
+  server: 172.64.155.209
+  port: 2052
+  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-56
+  type: vless
+  server: 172.67.143.113
+  port: 8880
+  uuid: 636de463-b509-4631-adc6-400b21733278
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmony510.workers.dev
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-4
+  type: trojan
+  server: 216.105.168.115
+  port: 59125
+  password: harz989mzcktd92m1vlf
+  skip-cert-verify: true
+- name: 意大利/Italy/freeinternet-2
+  type: vless
+  server: 204.216.216.23
+  port: 1114
+  uuid: 6ba2eac6-0ec9-44ca-a42b-a8e23aafb530
+  flow: xtls-rprx-vision
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: WfkCF0eEuIoO0MyJsKOddU89QrTzCZ4y2dzCJbH99CQ
+    short-id: 79a1e14b
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-57
+  type: vless
+  server: h7-83w.pages.dev
+  port: 2053
+  uuid: 0f4d41cf-0be1-4fcc-ac41-53b843ba0752
+  tls: true
+  servername: H7-83W.pAgeS.deV
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: h7-83w.pages.dev
+- name: 塞浦路斯/Cyprus/freeinternet-2
+  type: vmess
+  server: 45.12.132.183
+  port: 80
+  uuid: 703f722a-4bdf-4e9d-9afd-a681fdf87c74
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 45.12.132.183
+- name: 英国/朴次茅斯/United Kingdom/Portsmouth/freeinternet
+  type: ss
+  server: 149.102.149.207
+  port: 443
+  password: umWwoQJEJGf74SLe
+  cipher: aes-256-gcm
+- name: 美国/圣克拉拉/United States/Santa Clara/freeinternet
+  type: ss
+  server: pupas-shirting-unsung.freesocks.work
+  port: 443
+  password: p78naCf2EfOlRSLTX0wFVx
+  cipher: chacha20-ietf-poly1305
+- name: 新加坡/Singapore/freeinternet
+  type: vless
+  server: srv2.towersflowerss.com
+  port: 443
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+- name: 摩尔多瓦/Moldova/freeinternet
+  type: vmess
+  server: 94.131.108.36
+  port: 443
+  uuid: 9855f1f0-a800-40d4-8b38-c7d3eb79302d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 乌克兰/Ukraine/freeinternet-3
+  type: ss
+  server: 163.171.137.76
+  port: 48436
+  password: 6d0084c6e4502ab7
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-58
+  type: vless
+  server: 172.64.149.54
+  port: 2052
+  uuid: cdec8542-a21f-4377-9da3-ea60bb6d3a30
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-5
+  type: vless
+  server: 45.76.66.145
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: ynwta9.api-edge.fgfw.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560fp=chrome
+    headers:
+      Host: ynwta9.api-edge.fgfw.qzz.io
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-59
+  type: vless
+  server: 104.18.16.56
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳 @WangCai2
+    headers:
+      Host: sni.111000.v6.navy
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-9
+  type: ss
+  server: 8.209.74.72
+  port: 20001
+  password: PWpjPo3tqhPN4yRZ
+  cipher: chacha20-ietf-poly1305
+- name: 英国/United Kingdom/freeinternet-9
+  type: ss
+  server: 138.68.153.223
+  port: 46576
+  password: idMvoewrSyLLvEvP03k9zR
+  cipher: chacha20-ietf-poly1305
+- name: 德国/Germany/freeinternet-2
+  type: ss
+  server: 135.125.219.2
+  port: 42681
+  password: 33e1f4f6e369d673
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-60
+  type: vless
+  server: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+  port: 443
+  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
+  tls: true
+  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+  network: ws
+  ws-opts:
+    path: ws
+    headers:
+      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-61
+  type: vless
+  server: 172.67.187.117
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  tls: true
+  servername: restless-dew-894b.amirhost4.workers.dev
   skip-cert-verify: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: amirvpn.amirhm00100.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-53
-  type: vless
-  server: 104.16.158.162
-  port: 80
-  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
-  network: ws
-  ws-opts:
-    path: /?ed
-    headers:
-      Host: mute-violet-c674.poviy66273.workers.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-12
+      Host: restless-dew-894b.amirhost4.workers.dev
+- name: 美国/阿什本/United States/Ashburn/freeinternet
   type: ss
-  server: 57.129.95.45
+  server: 108.181.57.93
+  port: 8388
+  password: RSo52SbxW40r
+  cipher: chacha20-ietf-poly1305
+- name: 英国/朴次茅斯/United Kingdom/Portsmouth/freeinternet-2
+  type: ss
+  server: 149.102.132.186
+  port: 80
+  password: YhzqOeJsfuZ9rkkc
+  cipher: aes-256-gcm
+- name: 南非/约翰内斯堡/South Africa/Johannesburg/freeinternet
+  type: ss
+  server: 102.133.165.160
+  port: 16233
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  cipher: chacha20-ietf-poly1305
+- name: 德国/兰河畔林堡/Germany/Limburg an der Lahn/freeinternet-2
+  type: ss
+  server: 57.129.35.242
   port: 11201
-  password: 6675cbf62d6a3a4f
+  password: b2871db02e5f7e2f
   cipher: chacha20-ietf-poly1305
 - name: 沙特阿拉伯/Saudi Arabia/freeinternet
   type: vless
@@ -1564,225 +1869,32 @@ proxies:
     short-id: 775eb6408888248e
   client-fingerprint: chrome
   network: grpc
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-54
-  type: vless
-  server: 172.64.155.209
-  port: 2052
-  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
-- name: 南非/约翰内斯堡/South Africa/Johannesburg/freeinternet-2
-  type: ss
-  server: 102.37.156.224
-  port: 443
-  password: aduB9HGxQHjA2SBMRjkHX6
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-55
-  type: vless
-  server: 104.18.13.149
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram@V2rayAlpha
-    headers:
-      Host: sni.111000.v6.navy
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-7
-  type: vless
-  server: 151.240.151.202
-  port: 443
-  uuid: 09a429d9-6ffa-43f3-8b3a-c634dbdda94d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  client-fingerprint: chrome
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-8
-  type: ss
-  server: 185.117.91.27
-  port: 21836
-  password: PDNcrHbGmb5u76Og8NatjZ
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-7
-  type: vless
-  server: 222.167.202.36
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.36:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 英国/普雷斯顿/United Kingdom/Preston/freeinternet
-  type: vless
-  server: 2.27.43.20
-  port: 443
-  uuid: 1bc8a2e7-4c5d-4376-a24b-b877997fd997
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.google.com
-  reality-opts:
-    public-key: AQhB5LgVFJq87Kbavc9qYWwqYYnGx0Bj0ci4TXcboDw
-    short-id: a1b2c3d4
-  client-fingerprint: chrome
-- name: 英国/伦敦/United Kingdom/London/freeinternet
-  type: ss
-  server: 20.90.87.16
-  port: 443
-  password: W74XFALLLuw6m5IA
-  cipher: chacha20-ietf-poly1305
-- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet
-  type: vless
-  server: 144.31.19.131
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.rocks
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.rocks
-- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-4
-  type: vless
-  server: 90.156.255.198
-  port: 51114
-  uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
-    short-id: 772e
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-56
-  type: vless
-  server: 104.18.5.46
-  port: 8880
-  uuid: 623d675e-8748-4881-ac0f-dc1a10b595b1
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vahidasd1988-se08ot-3.vahidasd1988.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-57
-  type: vless
-  server: 188.114.99.243
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram@v2rayngzendegimamad=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 阿根廷/Argentina/freeinternet
-  type: ss
-  server: 154.205.154.184
-  port: 11201
-  password: 5b978047b47f7eab
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-58
-  type: vless
-  server: 1password.com
-  port: 443
-  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
-  tls: true
-  servername: rAyAn-007.fOtOn.dPdNs.oRg
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.fOtOn.dPdNs.oRg
-- name: 法国/France/freeinternet-3
-  type: vless
-  server: 141.95.127.132
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  network: ws
-  ws-opts:
-    path: /Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv
-    headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-59
-  type: vless
-  server: 8.35.211.68
-  port: 2087
-  uuid: 52f94104-7a84-4342-8bcd-96969eb46cbe
-  tls: true
-  servername: tristandeng.cc.cd
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tristandeng.cc.cd
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-5
-  type: ss
-  server: 217.30.10.70
-  port: 9010
-  password: f63gg8EruDnUrmz4
-  cipher: aes-256-cfb
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-60
-  type: vless
-  server: 104.18.4.130
-  port: 2082
-  uuid: cb213db5-803d-49dd-a7e2-46d938af0751
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: amiroo-l43dac88-v2.amiroo-d8b.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-61
-  type: vless
-  server: 104.19.173.68
-  port: 443
-  uuid: 7e346122-2ee0-406e-b964-a8ee665f1814
-  tls: true
-  servername: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: paRMis-1Tk63J.PArMiS.WoRkeRs.DeV
 - name: 美国/San Francisco/United States/San Francisco/freeinternet-62
   type: vless
-  server: 104.18.185.26
-  port: 80
-  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  server: 198.41.223.121
+  port: 443
+  uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
+  tls: true
+  servername: momi.timoreyhaneh.workers.dev
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-63
+      Host: momi.timoreyhaneh.workers.dev
+- name: 美国/United States/freeinternet-10
   type: vless
-  server: 162.159.38.147
+  server: 135.84.72.18
   port: 443
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
-  servername: snippet.fgfw.loc.cc
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
     headers:
-      Host: snippet.fgfw.loc.cc
-- name: 俄罗斯联邦/Russia/freeinternet-3
+      Host: sni.111000.dynv6.net
+- name: 俄罗斯联邦/Russia/freeinternet-2
   type: vless
   server: 85.92.108.39
   port: 443
@@ -1795,1655 +1907,7 @@ proxies:
     path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
     headers:
       Host: sni.111000.v6.army
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-64
-  type: vless
-  server: 172.64.53.126
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  tls: true
-  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-8
-  type: vless
-  server: 222.167.202.4
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.4:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 法国/巴黎/France/Paris/freeinternet-2
-  type: vless
-  server: 205.237.107.161
-  port: 443
-  uuid: 50c83f54-eb93-4ac6-ad4a-035a88a5b3d7
-  flow: xtls-rprx-vision
-  tls: true
-  servername: to-do.digital
-  reality-opts:
-    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
-  client-fingerprint: randomized
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-65
-  type: vless
-  server: 104.18.32.47
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram+@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 美国/United States/freeinternet-7
-  type: vmess
-  server: 149.30.232.103
-  port: 15097
-  uuid: 460908b8-de16-42e9-bd0d-191522ab92a5
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-3
-  type: ss
-  server: 216.105.168.18
-  port: 443
-  password: bQZl7HDxSabr1FurTYQHFU
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-66
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 443
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CiaLLO-egb.PAGeS.dEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CiaLLO-egb.PAGeS.dEV
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-67
-  type: vless
-  server: 104.18.14.19
-  port: 80
-  uuid: a2af6e7c-a792-4e51-9460-fff4bd74fbfc
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vahidqaz-ft33vt-1.vahidqaz.workers.dev
-- name: 乌克兰/Ukraine/freeinternet
-  type: ss
-  server: 163.171.137.76
-  port: 47393
-  password: eafad96826c79ddd
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-68
-  type: vless
-  server: love.zshabai.top
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 2-eox.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 2-eox.pages.dev
-- name: 美国/United States/freeinternet-8
-  type: vmess
-  server: 149.30.232.103
-  port: 31469
-  uuid: 5381445d-6ae4-4948-b61a-a16d9498d21b
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-69
-  type: vless
-  server: 104.18.16.56
-  port: 80
-  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
-  network: ws
-  ws-opts:
-    path: / @ProxyVPN11
-    headers:
-      Host: vip.yaml7.ggff.net
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-70
-  type: vless
-  server: 104.24.0.25
-  port: 2096
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /a82a7uco7z62
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/圣克拉拉/United States/Santa Clara/freeinternet-2
-  type: vless
-  server: 47.251.25.74
-  port: 443
-  uuid: 18805ff3-b420-45de-af18-93be14024ae8
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.amazon.com
-  reality-opts:
-    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-71
-  type: vless
-  server: 162.159.152.4
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-72
-  type: vless
-  server: cf.008500.xyz
-  port: 443
-  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
-  tls: true
-  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-9
-  type: vless
-  server: 222.167.202.35
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.35:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-73
-  type: vless
-  server: 104.16.9.24
-  port: 80
-  uuid: 2ac6e527-6410-48ce-b9ba-cc8135ee2a3b
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fragrant-recipe-09f4.wopecuyubak61.workers.dev
-- name: 美国/迈阿密/United States/Miami/freeinternet
-  type: vmess
-  server: 38.91.107.49
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 立陶宛/Lithuania/freeinternet-2
-  type: vless
-  server: 188.214.129.172
-  port: 443
-  uuid: 1c45e98c-8a4a-45e7-acc5-3a3cc962f463
-  flow: xtls-rprx-vision
-  tls: true
-  servername: flowwow.com
-  reality-opts:
-    public-key: h7CCbT_1gwxhQGM-4_pZkNRbAe_I6YFQM6jO9x6uORw
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-74
-  type: vless
-  server: 172.67.163.213
-  port: 2096
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /88ailh3l64gh
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 俄罗斯联邦/新西伯利亚/Russia/Novosibirsk/freeinternet
-  type: vless
-  server: 45.67.215.233
-  port: 443
-  uuid: 20e295db-a6af-4006-bfd6-91453f169968
-  tls: true
-  servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 057.electrocellco-cf-057.workers.dev
-- name: 美国/United States/freeinternet-9
-  type: vless
-  server: 192.0.54.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&telegram🇨🇳+@wangcai2
-    headers:
-      Host: sni.jpmj.dev
-- name: 法国/France/freeinternet-4
-  type: vless
-  server: 51.210.150.65
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram馃嚚馃嚦 @WangCai2=
-    headers:
-      Host: sni.111000.v6.navy
-- name: 埃及/Egypt/freeinternet
-  type: ss
-  server: 38.54.59.16
-  port: 11201
-  password: 6ff1423f61ffe673
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-75
-  type: vless
-  server: 188.114.96.0
-  port: 443
-  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
-  tls: true
-  servername: restless-dew-894b.amirhost4.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: restless-dew-894b.amirhost4.workers.dev
-- name: 美国/United States/freeinternet-10
-  type: vless
-  server: 18.245.54.3
-  port: 443
-  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
-  tls: true
-  servername: d23iuljn5k9z1j.cloudfront.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: d23iuljn5k9z1j.cloudfront.net
-- name: 美国/阿什本/United States/Ashburn/freeinternet
-  type: ss
-  server: 108.181.57.93
-  port: 8388
-  password: RSo52SbxW40r
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-76
-  type: vless
-  server: 104.26.1.221
-  port: 443
-  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
-  tls: true
-  servername: dabaius2.sylu.net
-  network: ws
-  ws-opts:
-    path: /db10240eb751d6ab
-    headers:
-      Host: dabaius2.sylu.net
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-77
-  type: vless
-  server: 104.17.74.206
-  port: 2096
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  tls: true
-  servername: INdex.HArmony702.WoRkeRS.Dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /axcp1cm75o7digvt
-    headers:
-      Host: index.harmony702.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-78
-  type: vless
-  server: 172.67.137.154
-  port: 443
-  uuid: 49d598ee-4dfc-4001-95ca-99a5b6002e3c
-  tls: true
-  servername: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: tiny-leaf-f59f.my-lla-s-a-njo-s-e.workers.dev
-- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-4
-  type: ss
-  server: 194.233.94.119
-  port: 80
-  password: 8t2xeemUtyui4zAv
-  cipher: aes-256-gcm
-- name: 荷兰/The Netherlands/freeinternet-7
-  type: vless
-  server: 45.131.208.191
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.my111000.tech
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/
-    headers:
-      Host: sni.my111000.tech
-- name: 乌克兰/Ukraine/freeinternet-2
-  type: ss
-  server: 163.171.137.76
-  port: 48436
-  password: 6d0084c6e4502ab7
-  cipher: chacha20-ietf-poly1305
-- name: 美国/北伯根/United States/North Bergen/freeinternet
-  type: vless
-  server: 137.184.218.169
-  port: 36925
-  uuid: c9fd0fb1-8251-4106-b09a-f4b426736f67
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: lJ9INPpO4rdnm2Tek_yg0PGFyUrBB6MoKyvqt_Mfqm0
-  client-fingerprint: chrome
-- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet-2
-  type: ss
-  server: 193.47.60.186
-  port: 28687
-  password: yKVMoB3AwiTEznpnoq2FYR
-  cipher: chacha20-ietf-poly1305
-- name: 俄罗斯联邦/Russia/freeinternet-4
-  type: vless
-  server: 94.228.127.168
-  port: 4449
-  uuid: 616f3e86-f563-474e-a5d5-04bb8aeb426d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: max.ru
-  reality-opts:
-    public-key: n7SozQLXoCxDya7vBJwS5ebj39r4KCUZrfsnBfcCLGs
-    short-id: ee65bc721c91
-  client-fingerprint: qq
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-6
-  type: vless
-  server: 151.115.96.243
-  port: 7242
-  uuid: 859b7d71-a9fc-4234-8e03-42eb876a170a
-  flow: xtls-rprx-vision
-  tls: true
-  servername: modily.net
-  reality-opts:
-    public-key: jGmjU0vrRXCnIwn0rVatYKf5ihWZhMvqidp2ceY1QAM
-    short-id: 8c01e365
-  client-fingerprint: firefox
-- name: 美国/United States/freeinternet-11
-  type: ss
-  server: 185.111.156.33
-  port: 80
-  password: 5mCH4624QflO1cFR
-  cipher: aes-256-gcm
-- name: 美国/United States/freeinternet-12
-  type: vless
-  server: 144.31.127.55
-  port: 443
-  uuid: 322ffd77-9adc-4e10-8302-a8bcc14555a0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gateway.icloud.com
-  reality-opts:
-    public-key: -ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk
-    short-id: c6118398
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-79
-  type: vless
-  server: 104.18.16.56
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram @WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-10
-  type: vmess
-  server: n1753101277.4u9ma.icu
-  port: 443
-  uuid: 6ea48dfe-7de2-45dc-9267-d4d9effad9fc
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: n1753101277.4u9ma.icu
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753101277.4u9ma.icu
-- name: 罗马尼亚/Romania/freeinternet
-  type: vless
-  server: 45.12.30.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3%40wangcai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 英国/United Kingdom/freeinternet-8
-  type: vless
-  server: 178.62.67.149
-  port: 443
-  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
-  tls: true
-  servername: 3-7gj.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 3-7gj.pages.dev
-- name: 斯洛文尼亚/Slovenia/freeinternet
-  type: vless
-  server: 92.60.74.56
-  port: 80
-  uuid: 43158d39-8066-4df4-b74e-2ab29f207e0a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 29.alij47649.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-80
-  type: vless
-  server: 104.17.192.0
-  port: 443
-  uuid: 427d85cd-a2a8-4668-8118-0d43d2d57f77
-  tls: true
-  servername: asmaos.uk
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: asmaos.uk
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-11
-  type: vless
-  server: 43.132.244.52
-  port: 21415
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  network: ws
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.jpmj.dev
-- name: 阿尔巴尼亚/地拉那/Albania/Tirana/freeinternet
-  type: vless
-  server: 144.31.131.33
-  port: 443
-  uuid: ae852d97-85f5-45cf-82a4-254eba345480
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn.cdnjst.org
-  reality-opts:
-    public-key: djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc
-    short-id: a120
-  client-fingerprint: chrome
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-12
-  type: vless
-  server: 222.167.202.50
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.50:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-81
-  type: vless
-  server: 162.159.36.20
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3%40WangCai2=
-    headers:
-      Host: sni.jpmj.dev
-- name: 法国/France/freeinternet-5
-  type: ss
-  server: 51.178.114.83
-  port: 11202
-  password: d5b878cbb46f3e33
-  cipher: chacha20-ietf-poly1305
-- name: 法国/France/freeinternet-6
-  type: ss
-  server: 51.75.168.50
-  port: 13030
-  password: 6c815bb84c781da5
-  cipher: chacha20-ietf-poly1305
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-7
-  type: ss
-  server: 217.30.10.70
-  port: 9020
-  password: BNmAXXxAHYpTRdzu
-  cipher: aes-256-cfb
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-82
-  type: vless
-  server: 104.26.13.31
-  port: 80
-  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: floral-term-d21f.wafajax493.workers.dev
-- name: 英国/United Kingdom/freeinternet-9
-  type: vless
-  server: 140.238.100.35
-  port: 40721
-  uuid: bf3e8944-8d26-47de-8748-b9aa74cce974
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk
-    short-id: df8611c07d
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-83
-  type: vless
-  server: www.visa.com.sg
-  port: 2052
-  uuid: 363a6072-05d7-48d5-8f19-312b05fdd9cd
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-8
-  type: ss
-  server: 217.30.10.70
-  port: 9005
-  password: ZET59LF6DvCC8KVt
-  cipher: aes-256-cfb
-- name: 印度/India/freeinternet-3
-  type: vless
-  server: 64.227.174.213
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  network: ws
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳+@WangCai2
-    headers:
-      Host: sni.111000.indevs.in
-- name: 俄罗斯联邦/Russia/freeinternet-5
-  type: vless
-  server: 51.250.27.109
-  port: 2053
-  uuid: 2a56c22c-8cd9-48e0-a21b-798c09312d6c
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: rR-VrakwXWCU1MZu34xI1g-LBK7Ux7kLLrj9LMYJiwQ
-    short-id: a1b2c3d4
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-84
-  type: vless
-  server: ::ffff:ac42:28ea
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sj8awuxdrof7
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/United States/freeinternet-13
-  type: ss
-  server: 62.146.171.57
-  port: 443
-  password: jd9FR12wprKPNJHg
-  cipher: aes-256-gcm
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-85
-  type: vless
-  server: 104.20.6.134
-  port: 2086
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  network: ws
-  ws-opts:
-    path: /PdgTMW8NBNZYo6L23v
-    headers:
-      Host: index.0x15.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-86
-  type: vless
-  server: ::ffff:6815:3d4c
-  port: 2087
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /z0aaecj1s11v
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 希腊/雅典/Greece/Athens/freeinternet-2
-  type: ss
-  server: 38.54.29.57
-  port: 11201
-  password: cb955c8530320120
-  cipher: chacha20-ietf-poly1305
-- name: 英国/United Kingdom/freeinternet-10
-  type: ss
-  server: mx2.drawnrisha.one
-  port: 55988
-  password: wUcoYw1SAVnxhKb1PGmqe69uCJjggJoDogXfPCmDCkvhnM1mJbExnxJethPBEiC49dsUdurRBCn9gh2U231vYAyYPSwtYAaw
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-13
-  type: vmess
-  server: 213.156.141.52
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-13
-  type: vless
-  server: 57.129.63.154
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram馃嚚馃嚦 @WangCai2=
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 奥地利/Austria/freeinternet-2
-  type: vless
-  server: 212.183.88.238
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.jpmj.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram🇨🇳 @WangCai2=
-    headers:
-      Host: sni.jpmj.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-87
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 2096
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: CIALlO-EgB.pAGES.dEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: CIALlO-EgB.pAGES.dEV
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-88
-  type: vless
-  server: ::ffff:6812:124f
-  port: 2053
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /4juk3zhs7tic
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-89
-  type: vless
-  server: 172.64.155.209
-  port: 80
-  uuid: 787b3724-16c8-4e58-a038-2b8013cdc6d9
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiTG1jRlUwNjNwVUxvYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: c3linogp4x20x5acoguup217nstesdu1.nobodyface4b13.workers.dev
-- name: 英国/伦敦/United Kingdom/London/freeinternet-2
-  type: ss
-  server: admin.c1.havij.co
-  port: 443
-  password: 1kVr0KATIJI7mwOF
-  cipher: chacha20-ietf-poly1305
-- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-5
-  type: vless
-  server: 83.222.20.64
-  port: 17910
-  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
-    short-id: 8c09fb78b12f
-  client-fingerprint: chrome
-- name: 马来西亚/吉隆坡/Malaysia/Kuala Lumpur/freeinternet
-  type: vmess
-  server: 47.250.45.234
-  port: 43063
-  uuid: c77f48f5-4be3-4461-b52b-49998e7b897b
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 保加利亚/Bulgaria/freeinternet-2
-  type: ss
-  server: 38.180.2.141
-  port: 5499
-  password: lGqs95QkFHo2NV
-  cipher: aes-256-gcm
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-14
-  type: vless
-  server: 134.209.246.179
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?telegram🇨🇳 @wangcai2=
-    headers:
-      Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-90
-  type: vless
-  server: ciallo-egb.pages.dev
-  port: 2053
-  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
-  tls: true
-  servername: Ciallo-eGB.PageS.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /%252F
-    headers:
-      Host: Ciallo-eGB.PageS.dev
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-15
-  type: ss
-  server: 57.129.95.38
-  port: 11201
-  password: f54cdee10f8b25ce
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-14
-  type: vless
-  server: 222.167.202.6
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.6:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-16
-  type: ss
-  server: 46.101.196.138
-  port: 23243
-  password: Q7cjiVD0oKNE2o9sUnZKQg
-  cipher: chacha20-ietf-poly1305
-- name: 塞浦路斯/Cyprus/freeinternet-2
-  type: vless
-  server: 45.15.129.182
-  port: 443
-  uuid: d05f9ffb-a4ba-4f1c-af24-8e4c54609cb4
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: Zu-tz_iwfUJh-hIHXDB3E3whvKXYOFNUPTmZYU0ffXo
-    short-id: 03a24827
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-91
-  type: vless
-  server: 104.18.109.147
-  port: 80
-  uuid: c29d39bd-92a4-45db-bb61-56013998617c
-  network: ws
-  ws-opts:
-    path: /telegram-xv2ry2
-    headers:
-      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
-- name: 俄罗斯联邦/Russia/freeinternet-6
-  type: vless
-  server: 5.182.36.251
-  port: 16331
-  uuid: d7dbeb1e-268c-465c-8f59-489f14703efd
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: wYtc0dMr5fw5bBQkbLNpTqtu0m4B9NKnOyEWjRJUmzk
-    short-id: 910aab
-  client-fingerprint: chrome
-- name: 马来西亚/吉隆坡/Malaysia/Kuala Lumpur/freeinternet-2
-  type: vmess
-  server: 47.250.45.234
-  port: 8613
-  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 美国/哈肯萨克/United States/Hackensack/freeinternet
-  type: vless
-  server: 95.164.85.109
-  port: 59374
-  uuid: bfc78cd8-5951-4803-8d6c-4cedef8cd420
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: ZsswZuBV8bEGQWFrpShCilSytnDUj0kwHFhTSLXzOwc
-    short-id: d21e7c
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-92
-  type: vless
-  server: 8.6.112.6
-  port: 443
-  uuid: 7f6a8bf3-e8fc-473e-8acb-acee6321ec40
-  tls: true
-  servername: tbp.zuhn.ir
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /test
-    headers:
-      Host: tbp.zuhn.ir
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-15
-  type: vless
-  server: 222.167.202.70
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.70:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-93
-  type: vless
-  server: 172.67.164.152
-  port: 443
-  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
-  tls: true
-  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: 002.inc-electrocell-001-002.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-94
-  type: trojan
-  server: www.multiplydose.com
-  port: 443
-  password: humanity
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: //assignment
-    headers:
-      Host: www.multiplydose.com
-- name: 法国/France/freeinternet-7
-  type: vless
-  server: 57.128.183.225
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?telegram
-    headers:
-      Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-95
-  type: vless
-  server: 104.18.205.156
-  port: 2052
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /4akspsofhsbt
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-96
-  type: vless
-  server: 188.114.98.112
-  port: 80
-  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
-  network: ws
-  ws-opts:
-    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
-    headers:
-      Host: elenaaaaaaaaaa.cloudns.pro.
-- name: 波兰/华沙/Poland/Warsaw/freeinternet-9
-  type: vless
-  server: 45.138.16.58
-  port: 30086
-  uuid: 595ae3f9-5a91-4eaa-82a3-28a221cf8f7f
-  network: grpc
-  grpc-opts:
-    grpc-service-name: gprc
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-97
-  type: vless
-  server: 198.41.223.121
-  port: 443
-  uuid: d555dac9-27cb-4ddb-89f5-6a1d8d1e4798
-  tls: true
-  servername: momi.timoreyhaneh.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: momi.timoreyhaneh.workers.dev
-- name: 塞舌尔/Seychelles/freeinternet-2
-  type: ss
-  server: 156.244.19.94
-  port: 11201
-  password: 652e423c559eefd4
-  cipher: chacha20-ietf-poly1305
-- name: 意大利/Italy/freeinternet-2
-  type: vless
-  server: sweden.gandopaneel.ir
-  port: 443
-  uuid: d7f67e94-aa9e-4454-b1cf-ce522a0d2728
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-9
-  type: ss
-  server: 213.109.147.242
-  port: 62685
-  password: VpKABcOpNNA0l5G2AVOmw8
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-98
-  type: vless
-  server: 104.19.222.169
-  port: 2082
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /gfdn0yadxgfr
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 英国/United Kingdom/freeinternet-11
-  type: vless
-  server: staging.lastilhame.monster
-  port: 443
-  uuid: 106d20f6-d70a-40e2-b69b-8e82baf8d117
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.microsoft.com
-  reality-opts:
-    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 60500a63ad12
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-99
-  type: trojan
-  server: 162.159.153.212
-  port: 2087
-  password: r137979f
-  sni: sheleqaz.emotionreza.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sheleqaz.emotionreza.workers.dev
-- name: 英国/United Kingdom/freeinternet-12
-  type: vless
-  server: 185.193.31.138
-  port: 2096
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-100
-  type: vless
-  server: 104.18.13.229
-  port: 2052
-  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: winbiss-0tpka6-v1.winbiss.workers.dev
-- name: 英国/United Kingdom/freeinternet-13
-  type: vless
-  server: 91.193.58.217
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.rocks
-  network: ws
-  ws-opts:
-    path: /?https://t.me/WangCai2🇨🇳=
-    headers:
-      Host: sni.111000.v6.rocks
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-101
-  type: vless
-  server: 141.101.121.196
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  tls: true
-  servername: blackshadow.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /44.209.52.7-443
-    headers:
-      Host: blackshadow.dpdns.org
-- name: 荷兰/The Netherlands/freeinternet-8
-  type: vless
-  server: dns.dressforida.monster
-  port: 443
-  uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.techradar.com
-  reality-opts:
-    public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
-    short-id: 174c6cf22e22
-  client-fingerprint: chrome
-- name: 美国/United States/freeinternet-14
-  type: ss
-  server: 66.94.125.178
-  port: 80
-  password: 14CLBaFBqwqxBJy6
-  cipher: aes-256-gcm
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-102
-  type: vless
-  server: 198.41.208.22
-  port: 2095
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /ripbdigi5hdb
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-16
-  type: vless
-  server: 222.167.202.60
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /222.167.202.60:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-103
-  type: vless
-  server: 104.21.80.5
-  port: 80
-  uuid: 14e1775b-d92c-455b-8db3-e6c6d61909e0
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vpnpro.eshghiabolfazl2009.workers.dev
-- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet-2
-  type: vless
-  server: 83.222.23.81
-  port: 38065
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  client-fingerprint: chrome
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-17
-  type: vless
-  server: 3.123.40.223
-  port: 7500
-  uuid: e679aa5e-fde0-4e9f-ad46-63725e1c47f3
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn77.com
-  reality-opts:
-    public-key: 8a3blVdAACDlvRA5zrdNxHLZ9boU5QkwGMkf0WwyZVI
-    short-id: 77a3a1c829040294
-  client-fingerprint: chrome
-- name: 摩尔多瓦/Moldova/freeinternet-3
-  type: vless
-  server: 94.131.101.135
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳 @WangCai2
-    headers:
-      Host: sni.111000.v6.navy
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-104
-  type: vless
-  server: 104.16.72.113
-  port: 2086
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /9om0kfpk0v09
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-105
-  type: vless
-  server: ::ffff:ac43:4a13
-  port: 443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /y3grpt0pkndz
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-106
-  type: vless
-  server: 198.41.209.88
-  port: 8080
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /ec4l307nur5g
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-107
-  type: vless
-  server: 104.16.149.66
-  port: 80
-  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: mute-violet-c674.poviy66273.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-108
-  type: vless
-  server: 172.67.143.113
-  port: 8880
-  uuid: 636de463-b509-4631-adc6-400b21733278
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmony510.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-109
-  type: vless
-  server: e1-f55.pages.dev
-  port: 443
-  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
-  tls: true
-  servername: e1-f55.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: e1-f55.pages.dev
-- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-4
-  type: vless
-  server: 85.209.153.60
-  port: 52335
-  uuid: 6ec3c298-1058-43bd-81e3-54b155c4ae21
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.deepl.com
-  reality-opts:
-    public-key: lwhFlU5V70GDf5OKTFeIAPC5uMKfvlGb3Y6nE-MmRmI
-    short-id: '72'
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-110
-  type: vless
-  server: 104.21.31.4
-  port: 8880
-  uuid: 0a5ab719-2407-4398-b507-8437ef365023
-  network: ws
-  ws-opts:
-    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
-    headers:
-      Host: underthegun.cfd.
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-111
-  type: vless
-  server: etl2.pages.dev
-  port: 443
-  uuid: 88d92d15-bfdb-47e7-8bdb-bfbef904a4d4
-  tls: true
-  servername: etl2.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: etl2.pages.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-112
-  type: vless
-  server: ::ffff:6815:45a4
-  port: 2087
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /yyru4ludskje
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-113
-  type: vless
-  server: freeyx.cloudflare88.eu.org
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.dynv6.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560&proxyip=ip.111000.de5.net:443
-    headers:
-      Host: sni.111000.dynv6.net
-- name: 美国/United States/freeinternet-15
-  type: vmess
-  server: 47.90.244.153
-  port: 8443
-  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /ws
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-114
-  type: vless
-  server: ::ffff:6812:1987
-  port: 8443
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  tls: true
-  servername: EMS.Arc-Time.Workers.DEV
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /sjzrncgjrm0r
-    headers:
-      Host: ems.arc-time.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-115
-  type: vless
-  server: 162.159.44.198
-  port: 443
-  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
-  tls: true
-  servername: fu.baiproxy.us.ci
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fu.baiproxy.us.ci
-- name: 英国/朴次茅斯/United Kingdom/Portsmouth/freeinternet-2
-  type: ss
-  server: 149.102.149.207
-  port: 443
-  password: umWwoQJEJGf74SLe
-  cipher: aes-256-gcm
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-10
-  type: vless
-  server: 45.136.126.32
-  port: 4443
-  uuid: 491772a0-12bd-47e2-afe9-5d5be5d47401
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: HYMZ6sGaRCC0PPGCzyWeJgpaNO2vP1IM71gkiJIJ6zQ
-    short-id: e313
-  client-fingerprint: chrome
-- name: 美国/United States/freeinternet-16
-  type: vmess
-  server: 149.30.232.103
-  port: 18393
-  uuid: 2c1807ce-6a63-4451-9add-a778d2507160
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-- name: 德国/Germany/freeinternet-2
-  type: vless
-  server: 94.130.132.180
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  servername: sni.111000.indevs.in
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40app_bedal=
-    headers:
-      Host: sni.111000.indevs.in
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-116
-  type: vless
-  server: 162.159.38.129
-  port: 80
-  uuid: e388fffb-03b0-4227-ac2c-2b5cec1f5c34
-  network: ws
-  ws-opts:
-    path: /?ed%3D2048
-    headers:
-      Host: leecher56.matinheydri.workers.dev
-- name: 塞浦路斯/Cyprus/freeinternet-3
-  type: vless
-  server: 45.15.178.124
-  port: 80
-  uuid: 75e1fde7-6bf6-48ef-ba43-400e960e185b
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: pq-bosniaandherzegovina1.09vpn.com
-- name: 澳大利亚/邦加里比/Australia/Bungarribee/freeinternet
-  type: vless
-  server: 192.9.162.122
-  port: 1443
-  uuid: 7a169e43-ff85-4572-9843-ba7207d07319
-  flow: xtls-rprx-vision
-  tls: true
-  servername: swdist.apple.com
-  reality-opts:
-    public-key: ZIBYUH_qQSeI1T6xImXG6MEZXP2yZW3NqGa8W69Cfyk
-    short-id: dde50f55d81116
-  client-fingerprint: chrome
-- name: 挪威/奥斯陆/Norway/Oslo/freeinternet
-  type: vless
-  server: 5.180.47.159
-  port: 8443
-  uuid: 2c564cf2-2291-4c8a-ad02-d8db601c41f9
-  flow: xtls-rprx-vision
-  tls: true
-  servername: google.com
-  reality-opts:
-    public-key: Bg1P8Pv18fdeezfJWpqfUScMYHUUInCgdXsXEWBNBFo
-    short-id: 9edc548e1e284d84
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-117
-  type: vless
-  server: mybb.com
-  port: 443
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 美国/United States/freeinternet-17
-  type: ss
-  server: 154.53.60.212
-  port: 80
-  password: ZfbPFDdeBj0B1Txs
-  cipher: aes-256-gcm
-- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet-3
-  type: vless
-  server: 77.73.232.61
-  port: 19747
-  uuid: 2a9ed01e-5455-44b4-a66a-76ee8165f0ac
-  tls: true
-  servername: yahoo.com
-  reality-opts:
-    public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
-    short-id: '2001'
-  client-fingerprint: chrome
-- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-5
-  type: trojan
-  server: ubu.okaoclax.me
-  port: 443
-  password: 13c169be-8592-4eaa-94cb-69c859e7d987
-  sni: ubu.okaoclax.me
-  network: ws
-  ws-opts:
-    path: /trojan-ws
-    headers:
-      Host: ubu.okaoclax.me
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-118
-  type: vless
-  server: 104.18.32.47
-  port: 2052
-  uuid: 12d75b7d-8fdf-4785-8d62-d836854e7e63
-  network: ws
-  ws-opts:
-    path: 🔒
-    headers:
-      Host: parking-nfchbwa1-v2.parking-1ab.workers.dev
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-17
-  type: vless
-  server: 222.167.202.2
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
-  tls: true
-  servername: 2026.hhhhh.eu.org
-  network: ws
-  ws-opts:
-    path: /222.167.202.2:7443
-    headers:
-      Host: 2026.hhhhh.eu.org
-- name: 美国/United States/freeinternet-18
-  type: vless
-  server: 152.53.80.40
-  port: 443
-  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
-  flow: xtls-rprx-vision
-  tls: true
-  servername: sha.helper-internet.com
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  client-fingerprint: chrome
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-18
-  type: vmess
-  server: n1753348736.lie5d.cyou
-  port: 443
-  uuid: f267eac3-dfb4-45be-a480-7e1847ca04ab
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: n1753348736.lie5d.cyou
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: n1753348736.lie5d.cyou
-- name: 伊朗/Iran/freeinternet
-  type: vless
-  server: 185.143.234.235
-  port: 443
-  uuid: 9c53f695-eb63-475c-b11f-e64fa828020d
-  tls: true
-  servername: cndnt.ir
-  network: ws
-  ws-opts:
-    path: /data
-    headers:
-      Host: lbank.trpn.ir
-- name: 罗马尼亚/Romania/freeinternet-2
-  type: ss
-  server: 154.46.31.106
-  port: 443
-  password: QFWzCw2uX9B9i6qAYeFBIE
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-119
-  type: vmess
-  server: jp248.cowjump.site
-  port: 443
-  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jp248.cowjump.site
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jp248.cowjump.site
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-120
-  type: vless
-  server: 104.26.3.125
-  port: 2052
-  uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: icy-wildflower-2590.lihuifeng595.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-121
-  type: vless
-  server: 172.67.155.231
-  port: 2095
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /pm1awvw769za
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 美国/United States/freeinternet-19
-  type: vless
-  server: 153.76.122.208
-  port: 8443
-  uuid: 0c8a9f50-51b3-43b5-b1fb-09fc3131a800
-  flow: xtls-rprx-vision
-  tls: true
-  servername: gwapp-pl01.freenets.store
-  reality-opts:
-    public-key: 6HLd5scfmPQ0J265arSRZJzPSr1HrVQ41QxYOTnxjCo
-  client-fingerprint: chrome
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-18
-  type: ss
-  server: 57.129.69.122
-  port: 27130
-  password: a3027c931ae07bce
-  cipher: chacha20-ietf-poly1305
-- name: 法国/France/freeinternet-8
-  type: ss
-  server: 38.242.222.183
-  port: 11201
-  password: 52671647af0cffa0
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-122
-  type: vless
-  server: cdn.prostovpn.website
-  port: 2087
-  uuid: 5b1c5027-5bc6-4ee2-b287-001b05fba219
-  tls: true
-  servername: cdn.prostovpn.website
-  network: ws
-  ws-opts:
-    path: /ws-cdn
-    headers:
-      Host: cdn.prostovpn.website
-- name: 荷兰/The Netherlands/freeinternet-9
-  type: vless
-  server: 46.149.78.27
-  port: 17113
-  uuid: 530eaa91-28a0-46ae-bc63-57384362ba6b
-  tls: true
-  servername: vk.ru
-  reality-opts:
-    public-key: 516wV7sLhUaSh5zqVbgyo-otX3ii13GgHJngRPhbflg
-    short-id: fe013b8818613e
-  client-fingerprint: chrome
-- name: 法国/France/freeinternet-9
-  type: vless
-  server: 213.136.69.8
-  port: 80
-  uuid: 15cbab96-197e-46a5-9042-073b3980c798
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: fsdns.ectunnelvpn.me
-- name: 印度/孟买/India/Mumbai/freeinternet-4
-  type: vmess
-  server: 152.67.8.205
-  port: 80
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-11
-  type: vless
-  server: midorinote.ru
-  port: 8443
-  uuid: a5e746f7-328f-4b65-a65f-e2e2a4a5b1a9
-  flow: xtls-rprx-vision
-  tls: true
-  servername: tradingview.com
-  reality-opts:
-    public-key: wNcFqVd4_PkgJbfgJJeouSU6Pn_Swuce4q4Chw5T0hY
-    short-id: f7aa9e61197d3ac6
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-123
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-63
   type: vless
   server: 104.18.13.149
   port: 8443
@@ -3456,65 +1920,289 @@ proxies:
     path: /?Telegram🇨🇳+@WangCai2
     headers:
       Host: sni.111000.dynv6.net
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-124
+- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-2
   type: vless
-  server: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-  port: 443
-  uuid: 2730487f-0ed5-4f04-92d5-f95f9253d4f4
-  tls: true
-  servername: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-  network: ws
-  ws-opts:
-    path: ws
-    headers:
-      Host: v2ngfast-v2ngfast-v2ngfast-v2ngfast.jovego2551.workers.dev
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-125
-  type: vless
-  server: 104.17.109.71
-  port: 2082
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /jeyk7gbxzfe1
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 俄罗斯联邦/Russia/freeinternet-7
-  type: vless
-  server: 5.182.36.56
-  port: 45886
-  uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+  server: 37.233.82.140
+  port: 40478
+  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
   tls: true
   servername: yahoo.com
   reality-opts:
-    public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
-    short-id: 94f9
+    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+    short-id: 3c
   client-fingerprint: chrome
-- name: 阿根廷/Argentina/freeinternet-2
+- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-3
   type: ss
-  server: 154.205.154.200
-  port: 11201
-  password: 4f26d8bb593a5fc5
+  server: 185.176.221.72
+  port: 24637
+  password: MholStyHL7DhrewKbpQa20
   cipher: chacha20-ietf-poly1305
-- name: 法国/France/freeinternet-10
-  type: ss
-  server: 57.130.28.148
-  port: 11201
-  password: 74918bc801d53a4b
-  cipher: chacha20-ietf-poly1305
-- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-19
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-64
   type: vless
-  server: 222.167.202.26
-  port: 7443
-  uuid: 06ef598c-1555-4887-b3f9-08214a2f6792
+  server: store.ubi.com
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
   tls: true
-  servername: 2026.hhhhh.eu.org
+  servername: 3-2h8.pages.dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /222.167.202.26:7443
+    path: /
     headers:
-      Host: 2026.hhhhh.eu.org
-- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet-3
+      Host: 3-2h8.pages.dev
+- name: 美国/United States/freeinternet-11
+  type: ss
+  server: tinkered-pennies-puppies.freesocks.work
+  port: 443
+  password: hbGrpfvNrJsUmKmPbR3iY2
+  cipher: chacha20-ietf-poly1305
+- name: 澳大利亚/悉尼/Australia/Sydney/freeinternet
+  type: ss
+  server: 154.26.155.172
+  port: 80
+  password: SL4vzcvhBHhTWivD
+  cipher: aes-256-gcm
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-65
+  type: vless
+  server: 162.159.36.20
+  port: 2083
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: newwk1.f1w.de5.net
+- name: 美国/United States/freeinternet-12
+  type: ss
+  server: 66.94.125.178
+  port: 80
+  password: 14CLBaFBqwqxBJy6
+  cipher: aes-256-gcm
+- name: 罗马尼亚/Romania/freeinternet-3
+  type: ss
+  server: 154.46.31.106
+  port: 443
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  cipher: chacha20-ietf-poly1305
+- name: 泰国/曼谷/Thailand/Bangkok/freeinternet
+  type: vless
+  server: 47.81.35.108
+  port: 443
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+  tls: true
+  servername: www.primevideo.com
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  client-fingerprint: chrome
+- name: 美国/迈阿密/United States/Miami/freeinternet
+  type: vmess
+  server: 38.91.107.49
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-66
+  type: vless
+  server: 104.16.158.162
+  port: 80
+  uuid: a7444b2b-20fb-461f-9840-63e5c8c7d883
+  network: ws
+  ws-opts:
+    path: /?ed
+    headers:
+      Host: mute-violet-c674.poviy66273.workers.dev
+- name: 法国/巴黎/France/Paris/freeinternet
+  type: vless
+  server: 205.237.107.160
+  port: 443
+  uuid: 3fee3b68-d94d-45e7-b5aa-8733c9fa3094
+  flow: xtls-rprx-vision
+  tls: true
+  servername: to-do.digital
+  reality-opts:
+    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+  client-fingerprint: chrome
+- name: 美国/United States/freeinternet-13
+  type: ss
+  server: 185.111.156.33
+  port: 80
+  password: 5mCH4624QflO1cFR
+  cipher: aes-256-gcm
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-10
+  type: vless
+  server: 134.209.246.179
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram🇨🇳 @wangcai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 日本/东京/Japan/Tokyo/freeinternet
+  type: vmess
+  server: 172.111.146.64
+  port: 80
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-67
+  type: vless
+  server: mybb.com
+  port: 443
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-68
+  type: trojan
+  server: 162.159.153.212
+  port: 2087
+  password: r137979f
+  sni: sheleqaz.emotionreza.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sheleqaz.emotionreza.workers.dev
+- name: 德国/卡尔斯鲁厄/Germany/Karlsruhe/freeinternet
+  type: ss
+  server: 2.58.81.221
+  port: 80
+  password: 9dQS3geeylyrRth9
+  cipher: aes-256-gcm
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-69
+  type: vless
+  server: 104.18.34.21
+  port: 8443
+  uuid: 656bb400-3b7a-47e3-94b0-0362f3865072
+  tls: true
+  servername: socks5.revil-time3.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: socks5.revil-time3.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-70
+  type: vless
+  server: 104.21.224.5
+  port: 80
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-71
+  type: vless
+  server: e1-f55.pages.dev
+  port: 443
+  uuid: 8b5acf77-2c2e-4eed-9ad1-be81851b99ea
+  tls: true
+  servername: e1-f55.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: e1-f55.pages.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-72
+  type: vless
+  server: 104.18.4.130
+  port: 2082
+  uuid: cb213db5-803d-49dd-a7e2-46d938af0751
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: amiroo-l43dac88-v2.amiroo-d8b.workers.dev
+- name: 荷兰/The Netherlands/freeinternet-7
+  type: vless
+  server: 141.11.197.127
+  port: 55269
+  uuid: 231e88bb-3a39-4f26-848e-908f83070283
+  tls: true
+  servername: vk.ru
+  reality-opts:
+    public-key: i1e3hqslC-n7XGp72HmDKU7ZuRk72pHbzujbNaYF-0s
+    short-id: 8f
+  client-fingerprint: chrome
+- name: 希腊/雅典/Greece/Athens/freeinternet
+  type: ss
+  server: 38.54.29.18
+  port: 11201
+  password: 932a519c8147a998
+  cipher: chacha20-ietf-poly1305
+- name: 波兰/华沙/Poland/Warsaw/freeinternet-2
+  type: vless
+  server: 82.26.91.244
+  port: 443
+  uuid: 6f99ed2f-9879-40e3-b5b4-5590c60f8e4a
+  tls: true
+  servername: vk.ru
+  reality-opts:
+    public-key: g8IbVqG1g7ht5ckWvYgOxZ9CrStwZt8QYQmTEwIWsTU
+    short-id: b5
+  client-fingerprint: chrome
+  network: grpc
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-5
+  type: vless
+  server: 43.132.244.52
+  port: 21415
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.jpmj.dev
+- name: 英国/朴次茅斯/United Kingdom/Portsmouth/freeinternet-3
+  type: ss
+  server: 149.102.132.184
+  port: 80
+  password: ldjmwoNqgQqqc43j
+  cipher: aes-256-gcm
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-11
+  type: vless
+  server: 138.124.186.100
+  port: 443
+  uuid: e346f220-4ca4-4f69-a66b-52e992b3b625
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.fh-aachen.de
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  client-fingerprint: chrome
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-7
+  type: vless
+  server: 212.34.149.232
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.army
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.111000.v6.army
+- name: 芬兰/赫尔辛基/Finland/Helsinki/freeinternet-4
   type: vless
   server: 83.219.97.166
   port: 30297
@@ -3526,13 +2214,129 @@ proxies:
     public-key: j07H9kYduVQkwjQw-7PW0um-0FUeCNe9J70oLv8I03I
     short-id: 626617b8f5c8
   client-fingerprint: chrome
-- name: 德国/兰河畔林堡/Germany/Limburg an der Lahn/freeinternet-2
+- name: 越南/胡志明市/Vietnam/Ho Chi Minh City/freeinternet-2
   type: ss
-  server: 141.95.109.94
-  port: 11201
-  password: 10f90af92b6c1a74
+  server: 112.197.26.106
+  port: 26417
+  password: fd7b0d14b590bceb
   cipher: chacha20-ietf-poly1305
-- name: 美国/United States/freeinternet-20
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-12
+  type: vless
+  server: 185.158.133.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram🇨🇳 @wangcai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-73
+  type: vless
+  server: 104.21.80.124
+  port: 8080
+  uuid: 38cba0b3-0844-4673-bd4e-0d9aa7d71b82
+  network: ws
+  ws-opts:
+    path: /image
+    headers:
+      Host: pro.getlian.shop
+- name: 摩尔多瓦/Moldova/freeinternet-2
+  type: vless
+  server: 94.131.8.19
+  port: 45448
+  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: MmEVCRy11fz67vYJQWyA2a_ZPMBzv2le2cus1XSSI0E
+    short-id: 958639bf55e679
+  client-fingerprint: chrome
+- name: 斯洛文尼亚/Slovenia/freeinternet
+  type: vless
+  server: 92.60.78.221
+  port: 443
+  uuid: 6897c181-24b1-4880-8660-e6c5c7ee13c7
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.tradingview.com
+  reality-opts:
+    public-key: pkIWxbuPAasjatPaHnAaTnCxVj1RkDFsJEWpLUTOcWY
+    short-id: 9917d2350096
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-74
+  type: vless
+  server: 104.18.16.56
+  port: 80
+  uuid: 388a6c57-87e7-420b-afe2-b3eb670fd7da
+  network: ws
+  ws-opts:
+    path: / @ProxyVPN11
+    headers:
+      Host: vip.yaml7.ggff.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-75
+  type: vless
+  server: 172.67.163.213
+  port: 2096
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /88ailh3l64gh
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 印度/孟买/India/Mumbai/freeinternet-2
+  type: ss
+  server: 163.171.206.24
+  port: 28028
+  password: 735582e51328af99
+  cipher: chacha20-ietf-poly1305
+- name: 以色列/Israel/freeinternet
+  type: vless
+  server: 64.176.166.143
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  flow: xtls-rprx-vision
+  tls: true
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: tboI265nKvT77HoZPyA6bgZNuLap_Jy-XvAx2-4Rcwk
+    short-id: 0c1553316a645758
+  client-fingerprint: chrome
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-13
+  type: vless
+  server: 144.31.116.136
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-76
+  type: vless
+  server: 104.21.31.4
+  port: 8880
+  uuid: 0a5ab719-2407-4398-b507-8437ef365023
+  network: ws
+  ws-opts:
+    path: /FCHANNEL---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY---ELiV2-RAY
+    headers:
+      Host: underthegun.cfd.
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-14
+  type: ss
+  server: 57.129.69.122
+  port: 27130
+  password: a3027c931ae07bce
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-14
   type: vless
   server: 72.56.38.50
   port: 443
@@ -3544,60 +2348,450 @@ proxies:
     public-key: joMQZiNZWpGdcKDBOyAJQMnvSfU54GYUqqP_NwUtHAo
     short-id: a1b2c3d4
   client-fingerprint: chrome
-- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-19
-  type: ss
-  server: 57.129.95.198
-  port: 11201
-  password: d6b0973401858b29
-  cipher: chacha20-ietf-poly1305
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-126
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-77
   type: vless
-  server: 104.18.241.114
-  port: 2095
-  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
-  network: ws
-  ws-opts:
-    path: /l25hqs0onbig
-    headers:
-      Host: index.arcane509.workers.dev
-- name: 俄罗斯联邦/Russia/freeinternet-8
-  type: vless
-  server: 37.18.15.84
+  server: 172.66.47.84
   port: 443
-  uuid: 48cb3571-abb6-4b24-84f3-3a96eb7c53ed
-  flow: xtls-rprx-vision
+  uuid: 88d92d15-bfdb-47e7-8bdb-bfbef904a4d4
   tls: true
-  servername: rbc.ru
-  reality-opts:
-    public-key: ISa-DZOI4LRRb9DHMFYm5oFqBXDjYzz0hVWUfWvzLmo
-    short-id: 5be97fb85093a3a9
-  client-fingerprint: chrome
-- name: 美国/San Francisco/United States/San Francisco/freeinternet-127
-  type: vless
-  server: 104.21.75.235
-  port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
-  tls: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  servername: etl2.pages.dev
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /
     headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 印度尼西亚/Indonesia/freeinternet
+      Host: etl2.pages.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-78
   type: vless
-  server: 202.155.11.73
-  port: 8443
-  uuid: 4b056394-2f40-11f1-bffe-46c4782ac1a7
+  server: chatgpt.com
+  port: 2096
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDEx.HArMOnY702.workeRS.DEv
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aoz8sb9opsovdegg
+    headers:
+      Host: index.harmony702.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-79
+  type: vless
+  server: 104.26.13.31
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sany.tara132.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sni.111000.dynv6.net/
+    headers:
+      Host: sany.tara132.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-80
+  type: vless
+  server: 162.159.44.66
+  port: 2053
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  tls: true
+  servername: fu.baiproxy.us.ci
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fu.baiproxy.us.ci
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-81
+  type: vless
+  server: 104.18.12.229
+  port: 8880
+  uuid: 78c5b6bd-1cb6-463c-bcba-9f17ef70c85b
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: square-frost-8d11.9660004.workers.dev
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-8
+  type: ss
+  server: 213.109.147.242
+  port: 62685
+  password: VpKABcOpNNA0l5G2AVOmw8
+  cipher: chacha20-ietf-poly1305
+- name: 荷兰/The Netherlands/freeinternet-8
+  type: vless
+  server: dns.dressforida.monster
+  port: 443
+  uuid: 79149019-5abe-46f9-91ae-e1e7d1d2c408
   flow: xtls-rprx-vision
   tls: true
-  servername: www.apple.com
+  servername: www.techradar.com
   reality-opts:
-    public-key: FVL0r87K3-vUP2KXQX1juLMFEHJtvxwKM-nm6_PYllc
-    short-id: deadbeef42
+    public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
+    short-id: 174c6cf22e22
   client-fingerprint: chrome
-- name: 摩尔多瓦/Moldova/freeinternet-4
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-82
+  type: vless
+  server: 104.20.5.134
+  port: 2052
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: index.0x14.workers.dev
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-9
+  type: vless
+  server: 77.239.108.36
+  port: 443
+  uuid: 322ffd77-9adc-4e10-8302-a8bcc14555a0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: gateway.icloud.com
+  reality-opts:
+    public-key: -ZIDWF9CykNoZYNpO6Vi7BdDyZl_hJUYxuIRmPnuxBk
+    short-id: c6118398
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-83
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiallO-eGb.pAGEs.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /%252F
+    headers:
+      Host: CiallO-eGb.pAGEs.Dev
+- name: 南非/约翰内斯堡/South Africa/Johannesburg/freeinternet-2
+  type: ss
+  server: 102.37.156.224
+  port: 443
+  password: aduB9HGxQHjA2SBMRjkHX6
+  cipher: chacha20-ietf-poly1305
+- name: 法国/France/freeinternet-6
+  type: vless
+  server: 51.210.150.65
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram馃嚚馃嚦 @WangCai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-84
+  type: vless
+  server: 104.18.205.156
+  port: 2052
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /4akspsofhsbt
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 奥地利/Austria/freeinternet
+  type: vless
+  server: 152.53.50.126
+  port: 22955
+  uuid: 63f92f3c-447c-4283-80b9-0af8e164cdad
+  tls: true
+  servername: one-piece.com
+  reality-opts:
+    public-key: 9Mt_Y8J_qDb1khlieWnhDSAq-kGtLHw6aOKgkAzOMms
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 美国/圣克拉拉/United States/Santa Clara/freeinternet-2
+  type: vless
+  server: 47.251.25.74
+  port: 443
+  uuid: 18805ff3-b420-45de-af18-93be14024ae8
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.amazon.com
+  reality-opts:
+    public-key: H56cOJhw0xw76lDEpt7IuJJmVGemK6_CK34KtHwDMX8
+  client-fingerprint: chrome
+- name: 爱沙尼亚/Estonia/freeinternet-2
+  type: vless
+  server: 87.236.146.32
+  port: 443
+  uuid: c8d1c6d3-388f-48fc-a8f0-ed90d955d096
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.vk.com
+  reality-opts:
+    public-key: nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw
+    short-id: 6ba85179e30d4fc2
+  client-fingerprint: chrome
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-15
+  type: vless
+  server: 141.98.7.174
+  port: 1443
+  uuid: 1a87693f-fbe6-414a-9085-6a546a740ce2
+  flow: xtls-rprx-vision
+  tls: true
+  servername: max.ru
+  reality-opts:
+    public-key: jcbKiuGcU2YDvAzLDO0fRFboRtQH-v-bQpZMWsns9TA
+    short-id: f9e8d7c6
+  client-fingerprint: qq
+- name: 韩国/春川市/South Korea/Chuncheon/freeinternet
+  type: vmess
+  server: chuncheon03.zgjok.com
+  port: 443
+  uuid: 81d5cac4-d039-4874-9a20-c391f580012d
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: chuncheon03.zgjok.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: chuncheon03.zgjok.com
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-85
+  type: vless
+  server: 162.159.45.202
+  port: 8443
+  uuid: dcda262b-0d36-4032-edd9-da4fd2d53711
+  tls: true
+  servername: zoro.jakesolo.eu.org
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: zoro.jakesolo.eu.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-86
+  type: vless
+  server: 172.64.53.126
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.user68f797c2f3e1b.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-87
+  type: vless
+  server: time.is
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 1-bhn.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1-bhn.pages.dev
+- name: 德国/Germany/freeinternet-3
+  type: vless
+  server: 94.130.132.180
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram%F0%9F%87%A8%F0%9F%87%B3+%40app_bedal=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 日本/东京/Japan/Tokyo/freeinternet-2
+  type: vless
+  server: dongjing4.zqjsqapi.com
+  port: 443
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  tls: true
+  servername: dongjing4.zqjsqapi.com
+  network: ws
+  ws-opts:
+    path: /proxy
+    headers:
+      Host: dongjing4.zqjsqapi.com
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-10
+  type: ss
+  server: 185.117.91.27
+  port: 21836
+  password: PDNcrHbGmb5u76Og8NatjZ
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-15
+  type: ss
+  server: 62.146.171.57
+  port: 443
+  password: jd9FR12wprKPNJHg
+  cipher: aes-256-gcm
+- name: 法国/巴黎/France/Paris/freeinternet-2
+  type: vless
+  server: 205.237.107.192
+  port: 443
+  uuid: 7a5aed7d-8e71-499c-a6e6-d96a204ac88f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: to-do.digital
+  reality-opts:
+    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+  client-fingerprint: chrome
+- name: 美国/北伯根/United States/North Bergen/freeinternet-2
+  type: vless
+  server: 159.89.87.21
+  port: 28190
+  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  flow: xtls-rprx-vision
+  tls: true
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
+  client-fingerprint: chrome
+- name: 俄罗斯联邦/Russia/freeinternet-3
+  type: vless
+  server: fi1.cyphervpn.pro
+  port: 443
+  uuid: f7bae22e-20ab-11f1-835c-0242ac110002
+  tls: true
+  servername: fi1.cyphervpn.pro
+  reality-opts:
+    public-key: z_mZq7riCGYKcTsXGCFX3KyhLL5PYgG3ydZ8_wM_ZkU
+    short-id: 5bfa0c
+  client-fingerprint: chrome
+- name: 日本/印西市/Japan/Inzai/freeinternet
+  type: trojan
+  server: jp2-8sb.6121999.dpdns.org
+  port: 24534
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  sni: jp2-8sb.6121999.dpdns.org
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-88
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 2096
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CIALlO-EgB.pAGES.dEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CIALlO-EgB.pAGES.dEV
+- name: 法国/France/freeinternet-7
+  type: ss
+  server: 38.242.222.183
+  port: 11201
+  password: 52671647af0cffa0
+  cipher: chacha20-ietf-poly1305
+- name: 法国/France/freeinternet-8
+  type: vless
+  server: 38.143.19.208
+  port: 8443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: ynwta9.api-edge.fgfw.qzz.io
+  network: ws
+  ws-opts:
+    path: /danfengfp=chrome
+    headers:
+      Host: ynwta9.api-edge.fgfw.qzz.io
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-89
+  type: vless
+  server: 104.17.192.0
+  port: 443
+  uuid: 427d85cd-a2a8-4668-8118-0d43d2d57f77
+  tls: true
+  servername: asmaos.uk
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: asmaos.uk
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-90
+  type: vless
+  server: ::ffff:ac43:4a13
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /y3grpt0pkndz
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 印度/India/freeinternet-2
+  type: ss
+  server: 139.59.87.22
+  port: 16970
+  password: 6ThD1AgwXc8Stpp7hEohLa
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-91
+  type: vless
+  server: 141.101.121.196
+  port: 443
+  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  tls: true
+  servername: blackshadow.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /44.209.52.7-443
+    headers:
+      Host: blackshadow.dpdns.org
+- name: 德国/Germany/freeinternet-4
+  type: vless
+  server: 31.185.108.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.my111000.tech
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-92
+  type: vless
+  server: 104.26.13.31
+  port: 80
+  uuid: fe665bb7-a558-42bc-9ba7-a59288ee4b93
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: floral-term-d21f.wafajax493.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-93
+  type: trojan
+  server: wing2452.nyc.mn
+  port: 443
+  password: bpb-trojan
+  sni: wing2452.nyc.mn
+  network: ws
+  ws-opts:
+    path: /tr
+    headers:
+      Host: wing2452.nyc.mn
+- name: 英国/United Kingdom/freeinternet-10
+  type: vless
+  server: 178.62.67.149
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 3-7gj.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 3-7gj.pages.dev
+- name: 摩尔多瓦/Moldova/freeinternet-3
   type: vless
   server: 94.232.247.168
   port: 41360
@@ -3608,15 +2802,918 @@ proxies:
     public-key: TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU
     short-id: 1aab45
   client-fingerprint: chrome
-- name: 哈萨克斯坦/Kazakhstan/freeinternet
-  type: vmess
-  server: 3h-kazakhstan1.09vpn.com
+- name: 斯洛文尼亚/Slovenia/freeinternet-2
+  type: vless
+  server: 92.60.74.56
   port: 80
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  uuid: 43158d39-8066-4df4-b74e-2ab29f207e0a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 29.alij47649.workers.dev
+- name: 印度/孟买/India/Mumbai/freeinternet-3
+  type: vmess
+  server: 152.67.8.205
+  port: 80
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /
+- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-4
+  type: vless
+  server: 83.222.20.64
+  port: 17910
+  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
+    short-id: 8c09fb78b12f
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-94
+  type: vless
+  server: creativecommons.org
+  port: 2086
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  network: ws
+  ws-opts:
+    path: /PdgTMW8NBNZYo6L23v
     headers:
-      Host: 3h-kazakhstan1.09vpn.com
+      Host: index.0x15.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-95
+  type: vless
+  server: 104.18.5.46
+  port: 8880
+  uuid: 623d675e-8748-4881-ac0f-dc1a10b595b1
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vahidasd1988-se08ot-3.vahidasd1988.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-96
+  type: vmess
+  server: us77.cowjump.site
+  port: 443
+  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: us77.cowjump.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us77.cowjump.site
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-97
+  type: vless
+  server: 104.16.72.113
+  port: 2086
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /9om0kfpk0v09
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-4
+  type: ss
+  server: 154.26.132.38
+  port: 16922
+  password: 42d2b47181a32de7
+  cipher: chacha20-ietf-poly1305
+- name: 德国/Germany/freeinternet-5
+  type: vless
+  server: 178.104.118.247
+  port: 2087
+  uuid: a34a5f3e-e9fa-40a6-f3af-2984adbd701b
+- name: 英国/United Kingdom/freeinternet-11
+  type: vless
+  server: 5.180.97.139
+  port: 443
+  uuid: a384c715-aeb5-45e8-859b-f687ca6c083f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: wBrGfTI9PaFf966aN6KaCY0cL6QRLlop4nzNa6bJsiQ
+    short-id: 9f35da6c9412b832
+  client-fingerprint: chrome
+- name: 美国/United States/freeinternet-16
+  type: vmess
+  server: 47.90.244.153
+  port: 8443
+  uuid: 65e2a985-ad20-4486-a7ec-b67b20ee56af
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 法国/France/freeinternet-9
+  type: ss
+  server: 54.37.78.130
+  port: 11201
+  password: d954bd6dd74a7f48
+  cipher: chacha20-ietf-poly1305
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-16
+  type: ss
+  server: 46.101.196.138
+  port: 23243
+  password: Q7cjiVD0oKNE2o9sUnZKQg
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-98
+  type: vless
+  server: 104.18.13.229
+  port: 2052
+  uuid: 25efc727-e853-49ba-9609-3c20009d0e7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: winbiss-0tpka6-v1.winbiss.workers.dev
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-17
+  type: vless
+  server: 57.129.63.154
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram馃嚚馃嚦 @WangCai2=
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 英国/United Kingdom/freeinternet-12
+  type: vless
+  server: 91.193.58.217
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.rocks
+  network: ws
+  ws-opts:
+    path: /?https%3A%2F%2Ft.me%2FWangCai2%F0%9F%87%A8%F0%9F%87%B3=
+    headers:
+      Host: sni.111000.v6.rocks
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-99
+  type: vless
+  server: 172.67.160.139
+  port: 443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /o9igw94d2qjy
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 俄罗斯联邦/Russia/freeinternet-4
+  type: vless
+  server: freetg.strettenvpn.com
+  port: 443
+  uuid: 31fb98b7-e7a1-4b56-8c6a-3f060f06393c
+  flow: xtls-rprx-vision
+  tls: true
+  servername: eh.vk.com
+  reality-opts:
+    public-key: yhUfTGgu5PYRlFqMnRZkxffH_aU05AFUToGI8_EKF28
+    short-id: '8248954896'
+  client-fingerprint: chrome
+- name: 波兰/华沙/Poland/Warsaw/freeinternet-3
+  type: vless
+  server: 151.115.96.243
+  port: 7242
+  uuid: 859b7d71-a9fc-4234-8e03-42eb876a170a
+  flow: xtls-rprx-vision
+  tls: true
+  servername: modily.net
+  reality-opts:
+    public-key: jGmjU0vrRXCnIwn0rVatYKf5ihWZhMvqidp2ceY1QAM
+    short-id: 8c01e365
+  client-fingerprint: firefox
+- name: 法国/France/freeinternet-10
+  type: vless
+  server: 141.95.127.132
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  network: ws
+  ws-opts:
+    path: /Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv-Telegram@V2ynpv
+    headers:
+      Host: sni.111000.indevs.in
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-11
+  type: vless
+  server: 103.97.88.133
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
+    headers:
+      Host: sni.111000.v6.navy
+- name: 印度/India/freeinternet-3
+  type: vless
+  server: 64.227.174.213
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳+@WangCai2
+    headers:
+      Host: sni.111000.indevs.in
+- name: 英国/United Kingdom/freeinternet-13
+  type: ss
+  server: mx2.drawnrisha.one
+  port: 55988
+  password: wUcoYw1SAVnxhKb1PGmqe69uCJjggJoDogXfPCmDCkvhnM1mJbExnxJethPBEiC49dsUdurRBCn9gh2U231vYAyYPSwtYAaw
+  cipher: chacha20-ietf-poly1305
+- name: 阿尔巴尼亚/地拉那/Albania/Tirana/freeinternet
+  type: vless
+  server: cdn.cdnjst.org
+  port: 443
+  uuid: ae852d97-85f5-45cf-82a4-254eba345480
+  flow: xtls-rprx-vision
+  tls: true
+  servername: cdn.cdnjst.org
+  reality-opts:
+    public-key: djH9iD2QV748ocK-wPH7HvDd03lu88zHhS4G-61w6Dc
+    short-id: a120
+  client-fingerprint: chrome
+- name: 阿根廷/Argentina/freeinternet-2
+  type: ss
+  server: 154.205.154.184
+  port: 11201
+  password: 5b978047b47f7eab
+  cipher: chacha20-ietf-poly1305
+- name: 香港/Hong Kong/freeinternet-2
+  type: ss
+  server: chengbai02.ascwt179.com
+  port: 13223
+  password: JVrsLLN1tkN8oXZO
+  cipher: aes-128-gcm
+- name: 日本/东京/Japan/Tokyo/freeinternet-3
+  type: vless
+  server: 47.74.14.140
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: yvl5fy.data-cache.chinam.indevs.in
+  network: ws
+  ws-opts:
+    path: /danfeng?ed=2560fp=chrome
+    headers:
+      Host: yvl5fy.data-cache.chinam.indevs.in
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-100
+  type: vless
+  server: 172.67.155.231
+  port: 2095
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /pm1awvw769za
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-101
+  type: vless
+  server: 172.67.187.251
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sant.atira-40.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sni.111000.dynv6.net/
+    headers:
+      Host: sant.atira-40.workers.dev
+- name: 美国/United States/freeinternet-17
+  type: ss
+  server: 107.172.250.161
+  port: 59556
+  password: QTmLViU4VEmuwbOxUw4IXd
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-18
+  type: ss
+  server: 154.53.60.212
+  port: 80
+  password: ZfbPFDdeBj0B1Txs
+  cipher: aes-256-gcm
+- name: 香港/香港/Hong Kong/Hong Kong/freeinternet-6
+  type: vmess
+  server: 213.156.141.52
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 俄罗斯联邦/新西伯利亚/Russia/Novosibirsk/freeinternet
+  type: vless
+  server: mci.buzzmuzzpanel.online
+  port: 443
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  tls: true
+  servername: 057.ElecTRocElLco-Cf-057.wOrKeRs.dEv
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 英国/United Kingdom/freeinternet-14
+  type: vless
+  server: 185.193.31.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?telegram%F0%9F%87%A8%F0%9F%87%B3+%40wangcai2=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 荷兰/阿姆斯特丹/The Netherlands/Amsterdam/freeinternet-12
+  type: vless
+  server: 185.214.74.210
+  port: 443
+  uuid: 6fd9f786-d974-49d0-b5c4-397678de69a2
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.cybo.com
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-102
+  type: vless
+  server: 104.16.9.24
+  port: 80
+  uuid: 2ac6e527-6410-48ce-b9ba-cc8135ee2a3b
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fragrant-recipe-09f4.wopecuyubak61.workers.dev
+- name: 法国/巴黎/France/Paris/freeinternet-3
+  type: vless
+  server: 205.237.107.184
+  port: 443
+  uuid: bff325a8-db8e-41de-bcd8-96c9d71d1cc1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: to-do.digital
+  reality-opts:
+    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+  client-fingerprint: chrome
+- name: 哈萨克斯坦/阿斯塔纳/Kazakhstan/Astana/freeinternet-3
+  type: vless
+  server: 178.236.16.98
+  port: 35728
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-103
+  type: vless
+  server: 104.18.32.47
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram+@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-104
+  type: vless
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+- name: 荷兰/The Netherlands/freeinternet-9
+  type: ss
+  server: 195.93.253.245
+  port: 49137
+  password: jvRO81Jx6IiOKM8R0cBAAR
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-105
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: CiaLLO-egb.PAGeS.dEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: CiaLLO-egb.PAGeS.dEV
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-106
+  type: vless
+  server: 104.18.109.147
+  port: 80
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
+  network: ws
+  ws-opts:
+    path: /telegram-xv2ry2
+    headers:
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-107
+  type: vless
+  server: 104.17.74.206
+  port: 2096
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: INdex.HArmony702.WoRkeRS.Dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /axcp1cm75o7digvt
+    headers:
+      Host: index.harmony702.workers.dev
+- name: 塞舌尔/Seychelles/freeinternet-2
+  type: vless
+  server: 156.243.83.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram🇨🇳@WangCai2=
+    headers:
+      Host: sni.jpmj.dev
+- name: 日本/东京/Japan/Tokyo/freeinternet-4
+  type: vless
+  server: 43.167.157.65
+  port: 12345
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  tls: true
+  servername: snippet.fgfw.loc.cc
+  network: ws
+  ws-opts:
+    path: /danfeng
+    headers:
+      Host: snippet.fgfw.loc.cc
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-108
+  type: vless
+  server: ::ffff:ac42:28ea
+  port: 8443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sj8awuxdrof7
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 阿联酋/迪拜/United Arab Emirates/Dubai/freeinternet
+  type: vless
+  server: 38.180.11.15
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 3-7v4.pages.dev
+  network: ws
+  ws-opts:
+    path: /proxyip=ProxyIP.DE.owg.dpdns.org
+    headers:
+      Host: 3-7v4.pages.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-109
+  type: vless
+  server: ::ffff:6815:3d4c
+  port: 2087
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /z0aaecj1s11v
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 德国/法兰克福/Germany/Frankfurt am Main/freeinternet-18
+  type: vless
+  server: 193.23.219.205
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-110
+  type: vmess
+  server: tw53.cowjump.site
+  port: 443
+  uuid: 0bf1cead-bdd4-4692-b3d4-6866ccb9f37a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: tw53.cowjump.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: tw53.cowjump.site
+- name: 荷兰/The Netherlands/freeinternet-10
+  type: vless
+  server: 46.149.78.27
+  port: 17113
+  uuid: 530eaa91-28a0-46ae-bc63-57384362ba6b
+  tls: true
+  servername: vk.ru
+  reality-opts:
+    public-key: 516wV7sLhUaSh5zqVbgyo-otX3ii13GgHJngRPhbflg
+    short-id: fe013b8818613e
+  client-fingerprint: chrome
+- name: 台湾/台北市/Taiwan/Taipei/freeinternet-2
+  type: ss
+  server: 111.250.4.195
+  port: 50099
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+  cipher: chacha20-ietf-poly1305
+- name: 美国/United States/freeinternet-19
+  type: vless
+  server: 192.200.160.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.jpmj.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳+@wangcai2
+    headers:
+      Host: sni.jpmj.dev
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-5
+  type: ss
+  server: 172.236.152.96
+  port: 62443
+  password: Waw_fWHe1N88K7MolnyU_Q
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-111
+  type: vless
+  server: www.visa.com.sg
+  port: 2052
+  uuid: 363a6072-05d7-48d5-8f19-312b05fdd9cd
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-112
+  type: vless
+  server: 104.17.201.245
+  port: 2052
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /x0o2qglxz7zu
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 日本/东京/Japan/Tokyo/freeinternet-5
+  type: vless
+  server: 154.19.186.66
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dns.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dns.army
+- name: 挪威/奥斯陆/Norway/Oslo/freeinternet
+  type: vless
+  server: 5.180.47.159
+  port: 8443
+  uuid: 2c564cf2-2291-4c8a-ad02-d8db601c41f9
+  flow: xtls-rprx-vision
+  tls: true
+  servername: google.com
+  reality-opts:
+    public-key: Bg1P8Pv18fdeezfJWpqfUScMYHUUInCgdXsXEWBNBFo
+    short-id: 9edc548e1e284d84
+  client-fingerprint: chrome
+- name: 巴基斯坦/Pakistan/freeinternet
+  type: ss
+  server: 119.159.245.24
+  port: 29700
+  password: fec4e6f9e954aead
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-113
+  type: vless
+  server: 104.21.80.5
+  port: 80
+  uuid: 14e1775b-d92c-455b-8db3-e6c6d61909e0
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpnpro.eshghiabolfazl2009.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-114
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 2053
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: Ciallo-eGB.PageS.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /%252F
+    headers:
+      Host: Ciallo-eGB.PageS.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-115
+  type: vless
+  server: 172.66.40.99
+  port: 2083
+  uuid: ce035748-9913-40c9-9fb6-c8389f7cdcf3
+  tls: true
+  servername: yousef.varzesh.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: yousef.varzesh.dpdns.org
+- name: 拉脱维亚/里加/Latvia/Riga/freeinternet-5
+  type: vless
+  server: 90.156.255.198
+  port: 51114
+  uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
+  tls: true
+  servername: yahoo.com
+  reality-opts:
+    public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
+    short-id: 772e
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-116
+  type: vless
+  server: 104.26.3.125
+  port: 2052
+  uuid: e8d06b09-acd9-448c-9874-3c36151d36ee
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: icy-wildflower-2590.lihuifeng595.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-117
+  type: vless
+  server: 104.19.222.169
+  port: 2082
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /gfdn0yadxgfr
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-118
+  type: vless
+  server: 172.64.53.83
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  tls: true
+  servername: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: powered-by-surena.configfarsi6982dd6e0355e.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-119
+  type: vless
+  server: 198.41.208.22
+  port: 2095
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /ripbdigi5hdb
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-120
+  type: vless
+  server: cdn.prostovpn.website
+  port: 2087
+  uuid: 5b1c5027-5bc6-4ee2-b287-001b05fba219
+  tls: true
+  servername: cdn.prostovpn.website
+  network: ws
+  ws-opts:
+    path: /ws-cdn
+    headers:
+      Host: cdn.prostovpn.website
+- name: 塞浦路斯/Cyprus/freeinternet-3
+  type: vless
+  server: 195.85.59.69
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing--nmsl.workers.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-121
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 2083
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  tls: true
+  servername: cIAllO-EGB.pAGES.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /%252F
+    headers:
+      Host: cIAllO-EGB.pAGES.dev
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-122
+  type: vless
+  server: 188.114.99.243
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.indevs.in
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?Telegram@v2rayngzendegimamad=
+    headers:
+      Host: sni.111000.indevs.in
+- name: 法国/France/freeinternet-11
+  type: ss
+  server: 57.130.28.148
+  port: 11201
+  password: 74918bc801d53a4b
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-123
+  type: trojan
+  server: vless.herogoing.top
+  port: 443
+  password: bpb-trojan
+  sni: vless.herogoing.top
+  network: ws
+  ws-opts:
+    path: /tr
+    headers:
+      Host: vless.herogoing.top
+- name: 摩尔多瓦/Moldova/freeinternet-4
+  type: vless
+  server: 94.131.101.135
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳 @WangCai2
+    headers:
+      Host: sni.111000.v6.navy
+- name: 保加利亚/Bulgaria/freeinternet-2
+  type: ss
+  server: 38.180.2.141
+  port: 5499
+  password: lGqs95QkFHo2NV
+  cipher: aes-256-gcm
+- name: 美国/洛杉矶/United States/Los Angeles/freeinternet-6
+  type: vless
+  server: 85.209.153.60
+  port: 52335
+  uuid: 6ec3c298-1058-43bd-81e3-54b155c4ae21
+  flow: xtls-rprx-vision
+  tls: true
+  servername: www.deepl.com
+  reality-opts:
+    public-key: lwhFlU5V70GDf5OKTFeIAPC5uMKfvlGb3Y6nE-MmRmI
+    short-id: '72'
+  client-fingerprint: chrome
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-124
+  type: vless
+  server: ::ffff:6812:1987
+  port: 8443
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  tls: true
+  servername: EMS.Arc-Time.Workers.DEV
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /sjzrncgjrm0r
+    headers:
+      Host: ems.arc-time.workers.dev
+- name: 塞舌尔/Seychelles/freeinternet-3
+  type: ss
+  server: 156.244.19.94
+  port: 11201
+  password: 652e423c559eefd4
+  cipher: chacha20-ietf-poly1305
+- name: 列支敦士登/Liechtenstein/freeinternet
+  type: vless
+  server: 45.15.167.17
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  tls: true
+  servername: 2-eox.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 2-eox.pages.dev
+- name: 波兰/华沙/Poland/Warsaw/freeinternet-4
+  type: vless
+  server: 2.56.125.209
+  port: 49868
+  uuid: be015dd2-30b4-4fcf-a9ee-080c13ac13fb
+  tls: true
+  servername: yahoo.com
+  skip-cert-verify: true
+  reality-opts:
+    public-key: joEKL4Itljxodt1SOe1itSMrAH9bk_udpPtXgIjdu10
+    short-id: 6d638e
+  client-fingerprint: chrome
+- name: 新加坡/新加坡/Singapore/Singapore/freeinternet-6
+  type: trojan
+  server: ubu.okaoclax.me
+  port: 443
+  password: 13c169be-8592-4eaa-94cb-69c859e7d987
+  sni: ubu.okaoclax.me
+  network: ws
+  ws-opts:
+    path: /trojan-ws
+    headers:
+      Host: ubu.okaoclax.me
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-125
+  type: vless
+  server: freeyx.cloudflare88.eu.org
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  servername: sni.111000.dynv6.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+- name: 希腊/雅典/Greece/Athens/freeinternet-2
+  type: ss
+  server: 38.54.29.57
+  port: 11201
+  password: cb955c8530320120
+  cipher: chacha20-ietf-poly1305
+- name: 美国/San Francisco/United States/San Francisco/freeinternet-126
+  type: vless
+  server: 198.41.209.88
+  port: 8080
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  ws-opts:
+    path: /ec4l307nur5g
+    headers:
+      Host: index.arcane509.workers.dev
+- name: 美国/United States/freeinternet-20
+  type: vless
+  server: 152.53.80.40
+  port: 443
+  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
+  flow: xtls-rprx-vision
+  tls: true
+  servername: sha.helper-internet.com
+  reality-opts:
+    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
+    short-id: ff776ff77be48b88
+  client-fingerprint: chrome
+- name: 法国/巴黎/France/Paris/freeinternet-4
+  type: vless
+  server: 205.237.107.161
+  port: 443
+  uuid: 50c83f54-eb93-4ac6-ad4a-035a88a5b3d7
+  flow: xtls-rprx-vision
+  tls: true
+  servername: to-do.digital
+  reality-opts:
+    public-key: yAIZa8Fp4M4KR2WgH4fObtHF-JMTCxDNKNib5yIZVmU
+  client-fingerprint: randomized
